@@ -24,8 +24,8 @@ const Home: NextPage = () => {
 						</a>
 					</p>
 					<p>
-						<a href="https://docs.google.com/document/d/10uNOTJSbDxd0RMBXnJfBv84a4d5IFZwnDJd-WdruwwQ/edit/">
-							Excersizes + Workout Split
+						<a href="https://docs.google.com/document/d/10uNOTJSbDxd0RMBXnJfBv84a4d5IFZwnDJd-WdruwwQ/edit?usp=sharing">
+							Exercises + Workout Split
 						</a>
 					</p>
 					<p>
