@@ -1,6 +1,7 @@
 import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import github_logo from "../public/img/github.png";
+
 const Footer = () => {
 	return (
 		<div id={styles.footer}>
