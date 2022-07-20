@@ -1,6 +1,8 @@
 #main {
 	text-align: center;
 	padding-top: 10px;
+	width: 95vw;
+	margin: auto;
 }
 #social_media_links {
 	margin-top: 5px;
