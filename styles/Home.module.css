@@ -1,0 +1,14 @@
+#main {
+	text-align: center;
+	padding-top: 10px;
+}
+#social_media_links {
+	margin-top: 5px;
+}
+#social_media_links p {
+	font-size: 1.25rem;
+	margin-bottom: 10px;
+}
+#social_media_links p a {
+	text-decoration: underline;
+}

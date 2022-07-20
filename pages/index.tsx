@@ -13,8 +13,31 @@ const Home: NextPage = () => {
 				/>
 			</Head>
 
-			<main className={styles.main}>
+			<main id={styles.main}>
 				<h1 className={styles.title}>Stuyvesant Weightlifting Club</h1>
+				<div id={styles.social_media_links}>
+					<p>
+						Join us on&nbsp;
+						<a href="https://stuyactivities.org/stuyweightlifting">
+							StuyActivities
+						</a>
+					</p>
+					<p>
+						<a href="https://docs.google.com/document/d/10uNOTJSbDxd0RMBXnJfBv84a4d5IFZwnDJd-WdruwwQ/edit/">
+							Excersizes + Workout Split
+						</a>
+					</p>
+					<p>
+						Email us at&nbsp;
+						<a href="mailto:stuywlc@gmail.com">stuywlc@gmail.com</a>
+					</p>
+					<p>
+						Follow our instagram, @
+						<a href="https://www.instagram.com/stuyweightlifting/">
+							stuyweightlifting
+						</a>
+					</p>
+				</div>
 			</main>
 		</div>
 	);
