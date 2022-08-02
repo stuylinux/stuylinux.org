@@ -24,6 +24,7 @@ const Home: NextPage = () => {
 						</a>
 					</p>
 					<p>
+						Take a look at the&nbsp;
 						<a href="https://docs.google.com/document/d/10uNOTJSbDxd0RMBXnJfBv84a4d5IFZwnDJd-WdruwwQ/edit?usp=sharing">
 							Exercises + Workout Split
 						</a>
@@ -33,10 +34,11 @@ const Home: NextPage = () => {
 						<a href="mailto:stuywlc@gmail.com">stuywlc@gmail.com</a>
 					</p>
 					<p>
-						Follow our instagram, @
+						Follow @
 						<a href="https://www.instagram.com/stuyweightlifting/">
 							stuyweightlifting
 						</a>
+						&nbsp;on instagram
 					</p>
 				</div>
 			</main>
