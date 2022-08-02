@@ -35,9 +35,7 @@ const Home: NextPage = () => {
 					</p>
 					<p>
 						Follow @
-						<a href="https://www.instagram.com/stuyweightlifting/">
-							stuyweightlifting
-						</a>
+						<a href="https://www.instagram.com/stuywlc/">stuywlc</a>
 						&nbsp;on instagram
 					</p>
 				</div>
