@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 				<div id={styles.social_media_links}>
 					<p>
 						Join us on&nbsp;
-						<a href="https://stuyactivities.org/stuyweightlifting">
+						<a href="https://stuyactivities.org/stuywlc">
 							StuyActivities
 						</a>
 					</p>
