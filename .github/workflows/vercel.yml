@@ -18,7 +18,7 @@ jobs:
                   node-version: "16"
                   cache: "npm"
                   cache-dependency-path: package-lock.json
-            - run: npm i -g vercel
+            - run: npm i --location=global vercel
             - name: "Upload build to production"
               env: { VERCEL_AUTH_TOKEN: "${{ secrets.VERCEL_AUTH_TOKEN }}" }
-              run: vercel --prod --confirm --token $VERCEL_AUTH_TOKEN
+              run: vercel --prod --yes --token $VERCEL_AUTH_TOKEN
