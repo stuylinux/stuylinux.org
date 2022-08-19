@@ -4,6 +4,11 @@
 	width: 95vw;
 	margin: auto;
 }
+#content {
+	font-size: 1.3rem;
+	margin: 10px;
+
+}
 #social_media_links {
 	margin-top: 5px;
 }

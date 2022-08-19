@@ -12,6 +12,14 @@ const Home: NextPage = () => {
 
 			<main id={styles.main}>
 				<h1 className={styles.title}>Stuyvesant Linux Club</h1>
+				<div id={styles.content}>
+					<p>
+						Stuy Linux is a new initiative to promote the use Free/Libre Open Source Software (FLOSS) programs.
+					</p>
+					<p>
+						This site is still under construction, so check back soon!
+					</p>
+				</div>
 				<div id={styles.social_media_links}>
 					<p>
 						Join us on&nbsp;
