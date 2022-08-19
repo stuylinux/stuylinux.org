@@ -8,12 +8,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.png" />
 			</Head>
 			<Script
 				async
 				defer
-				data-website-id="532b1bdf-a105-4c35-a9aa-c5c57ab6b3bf"
+				data-website-id="a437f55a-b94a-4bce-9231-eb4ee3b7d114"
 				src="https://umami-fork-alpha.vercel.app/umami.js"
 			></Script>
 			<div id="page">

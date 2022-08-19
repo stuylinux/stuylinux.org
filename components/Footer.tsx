@@ -7,10 +7,10 @@ const Footer = () => {
 		<div id={styles.footer}>
 			<p>
 				Made with &lt;3 by&nbsp;
-				<a href="https://github.com/leomet07">Lenny</a>
+				<a href="https://github.com/stuylinux">Stuy Linux</a>
 			</p>
 
-			<a href="https://github.com/leomet07/stuywlc">
+			<a href="https://github.com/stuylinux/site">
 				<Image
 					id={styles.github_logo}
 					alt="Github Logo"

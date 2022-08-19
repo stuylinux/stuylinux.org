@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
 
@@ -7,36 +6,18 @@ const Home: NextPage = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Stuy WLC</title>
-				<meta
-					name="description"
-					content="Stuyvesant Weightlifting club"
-				/>
+				<title>Stuy Linux</title>
+				<meta name="description" content="Stuyvesant Linux club" />
 			</Head>
 
 			<main id={styles.main}>
-				<h1 className={styles.title}>Stuyvesant Weightlifting Club</h1>
+				<h1 className={styles.title}>Stuyvesant Linux Club</h1>
 				<div id={styles.social_media_links}>
 					<p>
 						Join us on&nbsp;
-						<a href="https://stuyactivities.org/stuywlc">
+						<a href="https://stuyactivities.org/stuylinux">
 							StuyActivities
 						</a>
-					</p>
-					<p>
-						Take a look at the&nbsp;
-						<a href="https://docs.google.com/document/d/10uNOTJSbDxd0RMBXnJfBv84a4d5IFZwnDJd-WdruwwQ/edit?usp=sharing">
-							Exercises + Workout Split
-						</a>
-					</p>
-					<p>
-						Email us at&nbsp;
-						<a href="mailto:stuywlc@gmail.com">stuywlc@gmail.com</a>
-					</p>
-					<p>
-						Follow @
-						<a href="https://www.instagram.com/stuywlc/">stuywlc</a>
-						&nbsp;on instagram
 					</p>
 				</div>
 			</main>
