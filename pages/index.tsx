@@ -30,6 +30,15 @@ const Home: NextPage = () => {
 							StuyActivities
 						</a>
 					</p>
+					<p>
+						Chat on&nbsp;
+						<a href="https://discord.gg/8pkfP7mU78">
+							Discord
+						</a>
+					</p>
+					<p>
+						IRC server/bridge coming soon!
+					</p>
 				</div>
 			</main>
 		</div>
