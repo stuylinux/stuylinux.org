@@ -37,7 +37,10 @@ const Home: NextPage = () => {
 						</a>
 					</p>
 					<p>
-						IRC server/bridge coming soon!
+						IRC bridge&nbsp;
+						<a href="ircs://irc.stuylinux.org:6697">
+							irc.stuylinux.org:6697
+						</a>
 					</p>
 				</div>
 			</main>
