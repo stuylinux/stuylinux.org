@@ -21,4 +21,4 @@ jobs:
             - run: npm i --location=global vercel
             - name: "Upload build to production"
               env: { VERCEL_AUTH_TOKEN: "${{ secrets.VERCEL_AUTH_TOKEN }}" }
-              run: vercel --prod --yes --token $VERCEL_AUTH_TOKEN
+              run: vercel --prod --yes --name site --token $VERCEL_AUTH_TOKEN
