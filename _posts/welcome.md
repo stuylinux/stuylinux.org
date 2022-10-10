@@ -1,6 +1,6 @@
 # Welcome to the Stuy Linux Blog
 
-This is the first post for the Stuy Linux Blog. or posts page???
+This is the first post for the Stuy Linux Blog (or posts page??).
 
 We don't know. But this is going to be our page for making write-ups, tutorials, updates, and general posts.
 
