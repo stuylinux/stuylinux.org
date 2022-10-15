@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "../../styles/Slug.module.css";
 import { getPostBySlug, getPostSlugs } from "../../lib/post_helper";
-import markdownToHtml from "../../lib/markdownToHtml";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 
@@ -34,18 +33,10 @@ export default function ArticleComponent(props: Props) {
 	);
 }
 export const getStaticProps: GetStaticProps = async (context) => {
-	const { slug: post_slug } = context.params as IParams;
-
-	const response = await getPostBySlug(post_slug);
-
-	const title = response.split("\n")[0].split("# ")[1];
-	const post_html = await markdownToHtml(response);
+	const { slug } = context.params as IParams;
+	const post = await getPostBySlug(slug);
 	return {
-		props: {
-			post_html: post_html,
-			slug: post_slug,
-			title: title,
-		},
+		props: post,
 	};
 };
 export const getStaticPaths: GetStaticPaths = async () => {

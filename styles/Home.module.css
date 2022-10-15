@@ -7,7 +7,6 @@
 #content {
 	font-size: 1.3rem;
 	margin: 10px;
-
 }
 #social_media_links {
 	margin-top: 5px;
@@ -18,4 +17,13 @@
 }
 #social_media_links p a {
 	text-decoration: underline;
+}
+
+#latest_blog_posts {
+	margin-top: 40px;
+}
+
+.post_link {
+	text-decoration: underline;
+	cursor: pointer;
 }
