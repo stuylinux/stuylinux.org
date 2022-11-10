@@ -46,6 +46,12 @@ const Home = (props: Props) => {
 						</a>
 					</p>
 					<p>
+						Check out our&nbsp;
+						<a href="https://drive.google.com/drive/folders/1aRl9cY55-6nqlw2BGWxHwdZmRwGEgiLl">
+							slides
+						</a>
+					</p>
+					<p>
 						The posts page (or blog?) is being worked on right now
 						and is almost finalized. Check out&nbsp;
 						<Link href="/posts/welcome">the welcome post</Link>!
