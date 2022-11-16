@@ -10,6 +10,19 @@
 	line-height: 1.4;
 }
 
+#main * {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 #main a {
 	text-decoration: underline;
+}
+
+#main pre {
+	background-color: black;
+}
+
+#main li {
+	margin-top: 15px;
 }
