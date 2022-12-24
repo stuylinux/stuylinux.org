@@ -27,7 +27,7 @@ The process can then read that memory.
 
 Virtual memory maps are stored in page tables.
 
-![alt text](https://en.m.wikipedia.org/wiki/File:Virtual_address_space_and_physical_address_space_relationship.svg)
+![alt text]([https://en.m.wikipedia.org/wiki/File:Virtual_address_space_and_physical_address_space_relationship.svg](https://upload.wikimedia.org/wikipedia/commons/3/32/Virtual_address_space_and_physical_address_space_relationship.svg))
 
 ## Permissions 
 
