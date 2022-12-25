@@ -67,7 +67,7 @@ A ping test will be ran on every mirror, and the fastest is chosen. For me, this
 
 ![Terminal output](/img/posts/installing_alpine/13.png)
 
-![Terminal output](/img/posts/installing_alpine/15.png)
+![Terminal output](/img/posts/installing_alpine/14.png)
 
 Now let's add a user by typing in a lowercase login name. Name the user whatever you would like, but a a general convention is to keep it short and sweet. 
 
@@ -75,7 +75,7 @@ Give this user a password as well.
 
 Select openssh as the ssh server.
 
-![Terminal output](/img/posts/installing_alpine/16.png)
+![Terminal output](/img/posts/installing_alpine/15.png)
 
 Now is the "scariest" part. Configuring and partitioning disks.
 
@@ -87,19 +87,19 @@ This disk will be wiped and all data will be lost, so make sure you select the c
 
 Select "sys" to install the operating system onto this disk, in a simple way without disk encryption. See "crypt" to install Alpine with encryption.
 
-![Terminal output](/img/posts/installing_alpine/17.png)
+![Terminal output](/img/posts/installing_alpine/16.png)
 
 Press "y" to proceed with wiping this disk and installing Alpine.
 
 Installing...
 
-![Terminal output](/img/posts/installing_alpine/18.png)
+![Terminal output](/img/posts/installing_alpine/17.png)
 
 When the installation is finished, the setup-alpine command will terminate and you will be back at your root shell. But we are still booted from the installation medium. So, we need to 
 
 Run the *reboot* command, and unplug the installation medium drive if you are on bare metal. For VM users, you don't have to do anything, as virt-manager will never mount this installation ISO again. 
 
-![Terminal output](/img/posts/installing_alpine/19.png)
+![Terminal output](/img/posts/installing_alpine/18.png)
 
 7. ## WELCOME TO ALPINE
 
@@ -117,7 +117,7 @@ I achieve this by using vi to edit my */etc/apk/repositories* config file. Uncom
 doas vi /etc/apk/repositories
 ```
 
-![Terminal output](/img/posts/installing_alpine/20.png)
+![Terminal output](/img/posts/installing_alpine/19.png)
 
 Then, update the package cache and upgrade the system's packages with apk upgrade.
 
@@ -133,19 +133,19 @@ Example:
 doas apk add neofetch
 ```
 
-![Terminal output](/img/posts/installing_alpine/22.png)
+![Terminal output](/img/posts/installing_alpine/20.png)
 
-![Terminal output](/img/posts/installing_alpine/23.png)
+![Terminal output](/img/posts/installing_alpine/21.png)
 
 By default, Alpine uses ash instead of bash for the shell. Bash has slightly more features and is the linux standard, so you may want to enable it. 
 
 To set bash as the default shell for the root and current user, simply edit the /etc/passwd file. Find the lines that correspond to the root user and the current user, and edit the final part (the part that has /bin/ash) to /bin/bash 
 
-![Terminal output](/img/posts/installing_alpine/24.png)
+![Terminal output](/img/posts/installing_alpine/22.png)
 
 Then, reboot your system and notice that the shell you are placed into is now bash!
 
-![Terminal output](/img/posts/installing_alpine/25.png)
+![Terminal output](/img/posts/installing_alpine/23.png)
 
 ### Date Published: 2022_12_23 (YYYY_MM_DD)
 
