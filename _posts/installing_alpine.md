@@ -1,14 +1,12 @@
 # Installing Alpine Linux
 
-This blog post is a work in progress.
-
-This tutorial will be showing how to install Alpine Linux in a virtual machine (specifically, in a QEMU+KVM virtual machine through virt-manager) but these steps should be the same or similar on bare metal or other platforms.
+This tutorial will be showing how to install [Alpine Linux](https://www.alpinelinux.org/) in a virtual machine (specifically, in a QEMU+KVM virtual machine through virt-manager) but these steps should be the same or similar on bare metal or other platforms.
 
 1. Create the VM.
 
 ![Prompt to create a new virtual machine](/img/posts/installing_alpine/1.png)
 
-2. Select the alpine linux installation ISO. Also, specify the virtual machine type as generic linux.
+2. Select the alpine linux installation ISO. The ISO we need is the standard edition for our CPU architechture, and it can be downloaded [here](https://www.alpinelinux.org/downloads/).  Also, specify the virtual machine type as generic linux.
 
 ![Prompt to select your installation ISO](/img/posts/installing_alpine/2.png)
 
@@ -111,15 +109,41 @@ This should launch the user's shell. Alpine is now installed, and now that you'r
 You can do whatever you'd like. Install and setup any programs as you wish, or keep following around with this tutorial for some quick tips and tweaks. 
 
 
+In the following photo, I'm enabling an additional apk repository to add support for more software. 
+
+I achieve this by using vi to edit my */etc/apk/repositories* config file. Uncomment (remove the #) for any line that ends with /alpine/vXX.X/community.
+
+```bash
+doas vi /etc/apk/repositories
+```
+
 ![Terminal output](/img/posts/installing_alpine/20.png)
 
-![Terminal output](/img/posts/installing_alpine/21.png)
+Then, update the package cache and upgrade the system's packages with apk upgrade.
+
+```bash
+doas apk upgrade
+```
+
+Install packages that you would like with *apk add*.
+
+Example:
+
+```bash
+doas apk add neofetch
+```
 
 ![Terminal output](/img/posts/installing_alpine/22.png)
 
 ![Terminal output](/img/posts/installing_alpine/23.png)
 
+By default, Alpine uses ash instead of bash for the shell. Bash has slightly more features and is the linux standard, so you may want to enable it. 
+
+To set bash as the default shell for the root and current user, simply edit the /etc/passwd file. Find the lines that correspond to the root user and the current user, and edit the final part (the part that has /bin/ash) to /bin/bash 
+
 ![Terminal output](/img/posts/installing_alpine/24.png)
+
+Then, reboot your system and notice that the shell you are placed into is now bash!
 
 ![Terminal output](/img/posts/installing_alpine/25.png)
 
