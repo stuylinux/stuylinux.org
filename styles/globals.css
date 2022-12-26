@@ -21,10 +21,14 @@ a {
 }
 
 #page {
-	min-height: 94vh;
+	min-height: 89vh;
 }
 
 #footer_container {
 	width: 100%;
 	height: 6vh;
+}
+
+#navbar_container {
+	height: 5vh;
 }
