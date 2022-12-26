@@ -20,15 +20,15 @@ a {
 	margin: 0;
 }
 
-#page {
-	min-height: 89vh;
+#navbar_container {
+	height: 50px;
 }
 
 #footer_container {
 	width: 100%;
-	height: 6vh;
+	height: 55px;
 }
 
-#navbar_container {
-	height: 5vh;
+#page {
+	min-height: calc(100vh - (50px + 55px));
 }
