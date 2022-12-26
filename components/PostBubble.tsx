@@ -20,7 +20,7 @@ const PostBubble = (props: { post: ReturnedPost }) => {
 			<p id={styles.post_title} className={styles.post_link}>
 				<Link href={"/posts/" + post.slug}>{post.title}</Link>
 			</p>
-			<p>{post.date_published}</p>
+			<p>{post.formattedDate}</p>
 
 			<div>{authors}</div>
 		</div>

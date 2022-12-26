@@ -7,7 +7,8 @@ export interface ReturnedPost {
 	post_html: string;
 	slug: string;
 	title: string;
-	date_published: string;
+	raw_date_published: string;
+	formattedDate: string;
 	authors: string[];
 }
 
@@ -72,7 +73,8 @@ export async function getPostBySlug(slug: string) {
 		post_html: post_html,
 		slug: slug,
 		title: title,
-		date_published: formattedDate,
+		formattedDate: formattedDate,
+		raw_date_published: raw_date_published,
 		authors: authors,
 	} as ReturnedPost;
 }
@@ -85,8 +87,8 @@ export async function getAllPosts() {
 
 	posts = posts.sort(
 		(a, b) =>
-			convert_date_to_number(b.date_published) -
-			convert_date_to_number(a.date_published)
+			convert_date_to_number(b.raw_date_published) -
+			convert_date_to_number(a.raw_date_published)
 	); // Converting the YYYY_MM_DD date to a number makes sorting very simple
 
 	return posts;
