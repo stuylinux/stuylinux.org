@@ -1,8 +1,8 @@
 import type { GetStaticProps, GetStaticPropsContext } from "next";
 import styles from "../styles/PostsIndex.module.css";
 import Head from "next/head";
-import Link from "next/link";
 import { getAllPosts, ReturnedPost } from "../lib/post_helper";
+import PostBubble from "../components/PostBubble";
 
 interface Props {
 	posts: [ReturnedPost];
@@ -18,20 +18,13 @@ const Posts = (props: Props) => {
 			<main id={styles.main}>
 				<h1 className={styles.title}>Stuy Linux Posts</h1>
 
-				<div id={styles.latest_blog_posts}>
-					<h2>Our latest posts: </h2>
+				<section id={styles.posts_display}>
 					{props.posts.map((v) => (
-						<div key={v.slug} className={styles.new_blog_post}>
-							<h2>{v.title}</h2>
-							<p>{v.date_published}</p>
-							<span className={styles.post_link}>
-								<Link href={"/posts/" + v.slug}>
-									{"/posts/" + v.slug}
-								</Link>
-							</span>
+						<div key={v.slug} className={styles.blog_post_bubble}>
+							<PostBubble post={v} />
 						</div>
 					))}
-				</div>
+				</section>
 			</main>
 		</div>
 	);
