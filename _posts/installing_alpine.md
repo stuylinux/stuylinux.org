@@ -146,6 +146,6 @@ Then, reboot your system and notice that the shell you are placed into is now ba
 
 ![Terminal output](/img/posts/installing_alpine/23.png)
 
-### Date Published: 2022_12_23 (YYYY_MM_DD)
+### Date Published: 2022_12_25 (YYYY_MM_DD)
 
 ### Written by: Lenny Metlitsky [@leomet07](https://github.com/leomet07)
