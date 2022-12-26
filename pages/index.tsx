@@ -36,14 +36,14 @@ const Home = (props: Props) => {
 						</a>
 					</p>
 					<p>
-						Chat on&nbsp;
-						<a href="https://discord.gg/8pkfP7mU78">Discord</a>
+						Chat on the&nbsp;
+						<a href="https://irc.stuylinux.org">
+							Internet
+						</a> (irc.stuylinux.org:6697)
 					</p>
 					<p>
-						IRC bridge&nbsp;
-						<a href="ircs://irc.stuylinux.org:6697">
-							irc.stuylinux.org:6697
-						</a>
+						Join our&nbsp;
+						<a href="https://discord.gg/8pkfP7mU78">Discord</a>
 					</p>
 					<p>
 						Check out our&nbsp;
