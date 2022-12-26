@@ -20,6 +20,6 @@ The Markdown is rendered via a a simple library, remark and remark-html.
 
 When I (lenny) created this blog, I tried to use minimal extra libraries and keep the solution as simple and "de-bloated" as possible.
 
-### Date Published: 2022_10_9 (YYYY_MM_DD)
+### Date Published: 2022_10_09 (YYYY_MM_DD)
 
 ### Written by: Lenny Metlitsky [@leomet07](https://github.com/leomet07)
