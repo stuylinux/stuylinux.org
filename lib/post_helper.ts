@@ -8,6 +8,7 @@ export interface ReturnedPost {
 	slug: string;
 	title: string;
 	date_published: string;
+	authors: string[];
 }
 
 export async function getPostSlugs() {
@@ -21,6 +22,16 @@ async function getPostMarkdownBySlug(slug: string) {
 	const fileContents = await fs.promises.readFile(fullPath, "utf8");
 
 	return fileContents;
+}
+
+function parseDate(str: any) {
+	if (!/^(\d){8}$/.test(str)) {
+		throw new Error("invalid date of " + str);
+	}
+	var y = str.substr(0, 4),
+		m = str.substr(4, 2) - 1,
+		d = str.substr(6, 2);
+	return new Date(y, m, d);
 }
 
 function convert_date_to_number(d: string) {
@@ -37,17 +48,32 @@ export async function getPostBySlug(slug: string) {
 
 	const response_lines = response.split("\n");
 	const title = response_lines[0].split("# ")[1];
-	const date_published =
+	const raw_date_published =
 		response_lines
 			.find((line) => line.startsWith("### Date Published:"))
 			?.split("### Date Published: ")[1]
 			.split(" ")[0] || "1970_1_1";
+
+	const date = parseDate(raw_date_published.replace(/_/g, ""));
+	const formattedDate = new Intl.DateTimeFormat("en-US").format(date);
+	const author_promises = response_lines
+		.filter((line) => line.startsWith("### Written by:"))
+		.map((line): Promise<string> => {
+			return markdownToHtml(line.split("### Written by:")[1].trim());
+		});
+
+	let authors = await Promise.all(author_promises);
+	if (authors.length == 0) {
+		authors = ["Stuy Linux"];
+	}
+
 	const post_html = await markdownToHtml(response);
 	return {
 		post_html: post_html,
 		slug: slug,
 		title: title,
-		date_published: date_published,
+		date_published: formattedDate,
+		authors: authors,
 	} as ReturnedPost;
 }
 
