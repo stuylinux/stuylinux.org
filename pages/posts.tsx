@@ -33,7 +33,7 @@ const Posts = (props: Props) => {
 export const getStaticProps: GetStaticProps = async (
 	context: GetStaticPropsContext
 ) => {
-	const posts = ((await getAllPosts()) as ReturnedPost[]).slice(0, 5);
+	const posts = (await getAllPosts()) as ReturnedPost[];
 	// Only return the last 5 posts
 	return {
 		props: { posts: posts },
