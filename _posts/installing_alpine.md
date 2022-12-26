@@ -12,7 +12,7 @@ This tutorial will be showing how to install [Alpine Linux](https://www.alpineli
 
 3. Select the resources that you would like to allocate.
 
-Alpine Linux is EXTREMELY light, and since this tutorial is installing Alpine without a desktop environment, 512mb of ram would be enough. Alpine achieves this by being extremely light on system services and using OpenRC as its init system instead of SystemD.
+Alpine Linux is EXTREMELY light, and since this tutorial is installing Alpine without a desktop environment, 512MB of ram would be enough. Alpine achieves this by being extremely light on system services and using OpenRC as its init system instead of SystemD.
 
 ![Terminal output](/img/posts/installing_alpine/3.png)
 
