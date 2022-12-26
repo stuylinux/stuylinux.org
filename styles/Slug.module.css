@@ -26,3 +26,7 @@
 #main li {
 	margin-top: 15px;
 }
+
+#main img {
+	max-width: 100%;
+}
