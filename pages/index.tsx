@@ -57,20 +57,23 @@ const Home = (props: Props) => {
 						<Link href="/posts/welcome">the welcome post</Link>!
 					</p>
 				</div>
-				<div id={styles.latest_blog_posts}>
-					<h2>Our latest posts: </h2>
-					{props.posts.map((v) => (
-						<div key={v.slug} className={styles.new_blog_post}>
-							<h2>{v.title}</h2>
-							<p>{v.date_published}</p>
-							<span className={styles.post_link}>
-								<Link href={"/posts/" + v.slug}>
-									{"/posts/" + v.slug}
-								</Link>
-							</span>
-						</div>
-					))}
-				</div>
+				<section id={styles.latest_blog_posts}>
+					<h2>Our latest 3 posts: </h2>
+					<div>
+						{props.posts.map((v) => (
+							<div key={v.slug} className={styles.new_blog_post}>
+								<p className={styles.post_link}>
+									<Link href={"/posts/" + v.slug}>
+										{v.title}
+									</Link>
+								</p>
+							</div>
+						))}
+					</div>
+					<h2 id={styles.see_more_link}>
+						<Link href="/posts">See more posts</Link>
+					</h2>
+				</section>
 			</main>
 		</div>
 	);
@@ -79,8 +82,8 @@ const Home = (props: Props) => {
 export const getStaticProps: GetStaticProps = async (
 	context: GetStaticPropsContext
 ) => {
-	const posts = ((await getAllPosts()) as ReturnedPost[]).slice(0, 5);
-	// Only return the last 5 posts
+	const posts = ((await getAllPosts()) as ReturnedPost[]).slice(0, 3);
+	// Only return the last 3 posts
 	return {
 		props: { posts: posts },
 	};

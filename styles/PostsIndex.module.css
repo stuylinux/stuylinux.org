@@ -1,0 +1,8 @@
+#main {
+	text-align: center;
+}
+
+.post_link {
+	text-decoration: underline;
+	cursor: pointer;
+}

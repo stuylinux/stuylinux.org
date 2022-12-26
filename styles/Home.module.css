@@ -23,7 +23,12 @@
 	margin-top: 40px;
 }
 
-.post_link {
+.post_link,
+#see_more_link {
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.post_link {
+	font-size: 1.2rem;
 }
