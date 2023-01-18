@@ -21,6 +21,9 @@
 
 #main pre {
 	background-color: black;
+	padding: 16px;
+	border-radius: 4px;
+	overflow-x: scroll;
 }
 
 #main li {
