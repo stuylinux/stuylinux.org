@@ -18,7 +18,7 @@ If you open up this file in your favorite text editor, you'll typically find som
 
 Using this file, you can already override DNS to block nasty ad domains like googleadservices.com, but why go through all that work of manually editing when you can...
 
-## Download an aggreggated hosts file
+## Download an aggregated hosts file
 
 The [StevenBlack hosts repository](https://github.com/StevenBlack/hosts) is one of the best host file indices out there, with ads/trackers being included in all file sets, and other extensions being available for things like reducing exposure to social media!
 
