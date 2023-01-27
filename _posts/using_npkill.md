@@ -6,7 +6,7 @@ npkill is a command line tool that searches for all instances of those clunky an
 
 ## Running NPKILL
 
-NPKILL doesn't have to be installed, as you can just use NPX to run it.
+NPKILL doesn't have to be installed on its own, as you can just use NPX to install and run it for you.
 
 NPX should already be installed if you have nodejs and npm installed.
 
@@ -16,7 +16,7 @@ npx npkill
 
 That's it!
 
-But if you would like to install npx permanently, use npm to install it globally.
+But if you would like to install npx yourself (and permanently), use npm to install it globally.
 
 ```
 npm install -g npkill
