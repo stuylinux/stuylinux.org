@@ -31,7 +31,7 @@ However, here at Stuy Linux, we like to take things a little further, by ...
 
 Why spend 1 minute doing something manually when you can spend 100 automating it?
 
-The first thing you'll need to do is install and enable an implementation of cron on your system (blog post pending), and then you can `sudo crontab -e` (You can run from `doas` if you're based, or run straight from a root shell if you're feeling frisky), to edit the `root` user crontab, which will have full access to edit the hosts file.
+The first thing you'll need to do is [install and enable an implementation of cron on your system](cron), and then you can `sudo crontab -e` (You can run from `doas` if you're based, or run straight from a root shell if you're feeling frisky), to edit the `root` user crontab, which will have full access to edit the hosts file.
 
 You can now set up a cron job ([crontab guru](https://crontab.guru/#0_0_1_*_*)) can help you determine what time settings to use, for example monthly, with a command like the following (replace the URL with the edition you want to use):
 
