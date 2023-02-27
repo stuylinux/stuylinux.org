@@ -4,10 +4,11 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 250px;
+	width: 300px;
 	margin: auto;
 }
 
 #footer a {
 	text-decoration: underline;
 }
+

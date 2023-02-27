@@ -1,6 +1,7 @@
 import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import github_logo from "../public/img/github.png";
+import instagram_logo from "../public/img/instagram.png";
 
 const Footer = () => {
 	return (
@@ -12,9 +13,16 @@ const Footer = () => {
 
 			<a href="https://github.com/stuylinux/site">
 				<Image
-					id={styles.github_logo}
 					alt="Github Logo"
 					src={github_logo}
+					height={28}
+					width={28}
+				/>
+			</a>
+			<a href="https://www.instagram.com/stuylinux/">
+				<Image
+					alt="Instagram Logo"
+					src={instagram_logo}
 					height={28}
 					width={28}
 				/>
