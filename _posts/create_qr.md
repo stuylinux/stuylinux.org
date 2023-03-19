@@ -1,10 +1,10 @@
 # Creating QR Codes with `qrencode`
 
-I was working on promotional materials for our presence at the Spring Clubs Pubs Fair (this Thursday and Friday, March 16 and 17!), and needed to generate a few QR codes.
+I was working on some posters for Stuy Linux, and needed to generate a few QR codes.
 Needless to say, I turned to FOSS command-line tools!
 
 ## Installing `qrencode`
-Technically, I *lied* to all of you!! The project is actually `libqrencode`.
+Technically, I *lied* to all of you in the title!! The project is actually `libqrencode`.
 
 - On Debian/Ubuntu (dpkg) based systems, you can use `apt install qrencode`.
 - On Arch/Artix (pacman) based systems, you can use `pacman -S qrencode`.
@@ -46,7 +46,7 @@ zbarimg --quiet --raw [image]
 ```
 to obtain the unedited output, with no extraneous warnings.
 
-That's all for this blog entry, see you around (maybe at the Fair)!
+That's all for this blog entry, see you around!
 
 ### Date Published: 2023_03_11 (YYYY_MM_DD)
 
