@@ -130,3 +130,7 @@ root@debian:~# neofetch
               `"""
 
 ```
+
+### Date Published: 2023_03_22 (YYYY_MM_DD)
+
+### Written by: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
