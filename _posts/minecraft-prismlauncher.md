@@ -1,8 +1,8 @@
-# Running Minecraft quickly and easily using a free and open source client (Prism Launcher_
+#  Installing and Modding Minecraft with Prism Launcher
 
 Sure, the official Minecraft launcher supports GNU/Linux, but to be honest, if I didn't give you [the link](https://www.minecraft.net/en-us/download), you'd spend a good minute looking for the download page on the website...
 
-Let's use something more convenient, that also supports your favorite mods!
+Let's use something more convenient and free and open source, while also making it easy to install your favorite mods!
 
 
 ## What is Prism Launcher?
@@ -32,7 +32,7 @@ For simplicity, we'll use the AppImage, which requires very minimal setup!
 ### Downloading Prism Launcher - the command line way!
 Copy the AppImage URL off of the downloads page.
 
-Then, run `wget [URL]. For example:
+Then, run `wget [URL]`. For example:
 ```shell
 $ wget https://github.com/PrismLauncher/PrismLauncher/releases/download/6.3/PrismLauncher-Linux-6.3-x86_64.AppImage
 --2023-04-13 22:59:32--  https://github.com/PrismLauncher/PrismLauncher/releases/download/6.3/PrismLauncher-Linux-6.3-x86_64.AppImage
@@ -55,23 +55,105 @@ $ ./PrismLauncher-Linux-6.3-x86_64.AppImage
 
 ## Using Prism Launcher
 If you've installed it in a different way than we discussed here, just run the `prismlauncher` program, either via command line or in your application list!
-
+When you first launch PrismLauncher, you'll be asked to set up your language and Java version.
+The OpenJDK installations we installed [earlier](#downloading-java) should appear. If not, hit "Refresh".
+Select the Java 17 versions if you wish to play modern Minecraft, or Java 8 if you're going for a nostalgia trip. More memory allocated is better, but the default settings are usually good enough.
+![The PrismLauncher prompt for picking a Java installation](/img/posts/minecraft-prismlauncher/java.png)
 
 ### Logging into Minecraft
 PrismLauncher isn't a piracy tool! You still need to own Minecraft to use it!
 
+Click the accounts button in the top-right corner and head to "Manage Accounts":
+
+![Menu that appears when "Accounts" - denoted with a gray Steve face icon, is clicked. There is No Default Account, and an option to Manage Accounts.](/img/posts/minecraft-prismlauncher/acc.png)
+
+![The Account Settings menu. It reads "Welcome! If you're new here, you can click the "Add" button to add your Mojang or Minecraft account.](/img/posts/minecraft-prismlauncher/account-settings.png)
+
+Use the sign in options on the right-hand side of the menu to sign in to your Minecraft account (Microsoft or Mojang).
+
+If you're using a Microsoft account, note that "Sign in with GitHub" might not work due to redirecting you to the wrong place.
+
+Once you're done, you should be able to see your Minecraft account in the top-right corner.
+
 ### Installing a Vanilla Version
+To install an instance of Minecraft, go to the "Add Instance" button in the top-left corner of Prism Launcher.
+
+It will then open a menu where you can choose your version of Minecraft.
+
+![Add Instance - Vanilla](/img/posts/minecraft-prismlauncher/vanilla.png)
+
+Scroll down to pick the version you want, and hit OK.
+You do not need to select a mod loader just yet, but if you know what you're doing, you can enable one here.
+
+You can select it and hit the play button, and then it will download the Minecraft date from Mojang, and launch it!
 
 ### Installing Performance Mods
-#### Optifine
+#### OptiFine
+OptiFine is a bit of a pain to install, and there are much more convenient (and FLOSS) options nowadays. See [below](#chem-lab).
+
+Head to the [OptiFine download page](https://optifine.net/downloads) (hint: click "Show all versions" for older versions of Minecraft).
+Click "(Mirror)" (the download button leads to an ad link), and download the jar.
+
+Run the jar:
+```shell
+$ java -jar Optifine_blablabla.jar
+```
+
+Run the "Extract" command - note that you'll need to have the official Minecraft launcher install and run that version of Minecraft first, which is quite inconvenient.
+
+Then, you will get an `Optifine_blablabla_MOD.jar` in the same folder as your original jar.
+
+Right-click your Minecraft instance, and hit "Edit".
+
+![A Minecraft instance is right clicked.](/img/posts/minecraft-prismlauncher/rc.png)
+
+In the "Version" tab, hit "Add to Minecraft.jar". Select your `Optifine_blablabla_MOD.jar`. 
+
+![The Version tab. "Add to Minecraft.jar" is highlighted.](/img/posts/minecraft-prismlauncher/add.png)
+
+You are done, and can now launch with OptiFine.
 
 #### Chem Lab
 > *honestly at this point fabric jar with lithium and phosphor*
 \- pcao#2918
 
+A modern way to optimize Minecraft is to use the Fabric mod launcher with tools like Sodium, Lithium, and Phosphor, along with Iris Shaders to provide compatibility with OptiFine shaders.
+In fact, these are some of the top mods on [modrinth](https://modrinth.com/mods).
 
-### Date Published: 2023_04_1X (YYYY_MM_DD)
+Prism Launcher makes our lives easy by giving us an easy way to install Fabric and mods off of modrinth.
+
+First, right-click and edit the instance settings.
+
+Head to Version, and click "Install Fabric". (While you're here, remove or uncheck OptiFine).
+
+![Fabric has been installed in the Version menu. "Install Fabric" is still highlighted.](/img/posts/minecraft-prismlauncher/fabric.png)
+
+
+Now, head to Mods. Click on "Download Mods".
+
+![We have moved to the Mods menu. "Download Mods" is highlighted.](/img/posts/minecraft-prismlauncher/mods.png)
+
+Click on the mods you want (in this case, we are grabbing Sodium, Lithium, and Iris Shaders), and click "Select mod for download" on each one's page.
+The mod's name in the list will be bolded and underlined to show that it is selected
+
+![The Sodium mod page is open. "Select mod for download" is on the bottom-left corner. Lithium and Iris Shaders are underlined.](/img/posts/minecraft-prismlauncher/select.png)
+
+We can use the search bar on top to search for a mod, in this case, Phosphor, and we can select it like the others.
+
+![The Phosphor mod page is open. "Select mod for download" is on the bottom-left corner.](/img/posts/minecraft-prismlauncher/phosphor.png)
+
+To download the mods, click "Review and confirm". The review page will let you uncheck mods you no longer want.
+
+![The Review window is open. Iris Shaders, Lithium, Phosphor, and Sodium are checked.](/img/posts/minecraft-prismlauncher/review.png)
+
+Prism Launcher will then download the mods, and handle installing them for you!
+
+You can now launch the game, and enjoy your boosted performance!
+
+Have fun!
+
+### Date Published: 2023_04_16 (YYYY_MM_DD)
 
 ### Written by: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
-### Written by: {gus} [@thegu5](https://github.com/thegu5)
+### Reviewed by: {gus} [@thegu5](https://github.com/thegu5)
 
