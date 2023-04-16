@@ -69,7 +69,7 @@ Click the accounts button in the top-right corner and head to "Manage Accounts":
 
 ![The Account Settings menu. It reads "Welcome! If you're new here, you can click the "Add" button to add your Mojang or Minecraft account.](/img/posts/minecraft-prismlauncher/account-settings.png)
 
-Use the sign in options on the right-hand side of the menu to sign in to your Minecraft account (Microsoft or Mojang).
+Use the sign in options on the right-hand side of the menu to sign in with your Minecraft (Microsoft) account. Although an option for Mojang accounts is provided, they have been phased out - so if you still have one, follow [this guide from Microsoft](https://help.minecraft.net/hc/en-us/articles/4403181904525).
 
 If you're using a Microsoft account, note that "Sign in with GitHub" might not work due to redirecting you to the wrong place.
 
