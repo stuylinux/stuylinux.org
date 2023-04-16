@@ -128,13 +128,16 @@ Head to Version, and click "Install Fabric". (While you're here, remove or unche
 
 ![Fabric has been installed in the Version menu. "Install Fabric" is still highlighted.](/img/posts/minecraft-prismlauncher/fabric.png)
 
+Alternatively, you can also hit "Add Instance", and select "Fabric" for the Mod Loader.
+![Creating a new instance with Fabric selected](/img/posts/minecraft-prismlauncher/newinstance.png)
+
 
 Now, head to Mods. Click on "Download Mods".
 
 ![We have moved to the Mods menu. "Download Mods" is highlighted.](/img/posts/minecraft-prismlauncher/mods.png)
 
 Click on the mods you want (in this case, we are grabbing Sodium, Lithium, and Iris Shaders), and click "Select mod for download" on each one's page.
-The mod's name in the list will be bolded and underlined to show that it is selected
+The mod's name in the list will be bolded and underlined to show that it is selected.
 
 ![The Sodium mod page is open. "Select mod for download" is on the bottom-left corner. Lithium and Iris Shaders are underlined.](/img/posts/minecraft-prismlauncher/select.png)
 
