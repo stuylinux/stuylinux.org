@@ -117,7 +117,7 @@ You are done, and can now launch with OptiFine.
 > *honestly at this point fabric jar with lithium and phosphor*
 \- pcao#2918
 
-A modern way to optimize Minecraft is to use the Fabric mod launcher with tools like Sodium, Lithium, and Phosphor, along with Iris Shaders to provide compatibility with OptiFine shaders.
+A modern way to optimize Minecraft is to use the Fabric mod loader with tools like Sodium, Lithium, and Phosphor, along with Iris Shaders to provide compatibility with OptiFine shaders.
 In fact, these are some of the top mods on [modrinth](https://modrinth.com/mods).
 
 Prism Launcher makes our lives easy by giving us an easy way to install Fabric and mods off of modrinth.
