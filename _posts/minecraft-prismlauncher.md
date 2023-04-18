@@ -158,5 +158,5 @@ Have fun!
 ### Date Published: 2023_04_16 (YYYY_MM_DD)
 
 ### Written by: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
-### Reviewed by: {gus} [@thegu5](https://github.com/thegu5)
+### Reviewed by: Gus [@thegu5](https://github.com/thegu5)
 
