@@ -168,7 +168,7 @@ You can now launch the game, and enjoy your boosted performance!
 
 Have fun!
 
-### Date Published: 2023_04_16 (YYYY_MM_DD)
+### Date Published: 2023_04_22 (YYYY_MM_DD)
 
 ### Written by: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
 
