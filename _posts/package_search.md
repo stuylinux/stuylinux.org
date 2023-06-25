@@ -87,10 +87,6 @@ Arch's official repositories can be browsed at
 can be seen at
 [https://aur.archlinux.org/packages](https://aur.archlinux.org/packages).
 
-In addition, the [Arch Wiki](https://wiki.archlinux.org/title/Pacman/Rosetta)
-has a splendid "Rosetta" table that lets you translate common tasks into
-various distro-isms!
-
 ### xbps - Void
 
 Disclaimer: I use Void btw.
@@ -108,6 +104,10 @@ For web-based package searching across distros, try
 [Repology](https://repology.org/projects/) - which also makes those cool
 package listing displays that people embed in README. Another option is
 [pkgs.org](https://pkgs.org/).
+
+### The Rosetta Table
+
+The Arch Wiki has a splendid ["Rosetta" table](https://wiki.archlinux.org/title/Pacman/Rosetta) that lets you translate common tasks into various distro-isms! It's really helpful for any tasks that are more specific than querying.
 
 That's it! Have fun installing whatever you need!
 
