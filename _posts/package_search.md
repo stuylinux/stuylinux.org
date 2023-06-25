@@ -43,8 +43,7 @@ For distros using `dnf` and the `rpm` package format, you can use one of the
 following commands:
 ```sh
 dnf search <package>  # has extremely helpful search detail headers!
-yum search <package>  # this is the same thing, just used if you're on an 
-ancient distro without dnf
+yum search <package>  # this is the same thing, just used if you're on an ancient distro without dnf
 ```
 Fedora offers web search for package repositories 
 [https://packages.fedoraproject.org/](https://packages.fedoraproject.org/).
@@ -66,8 +65,7 @@ Service](https://openbuildservice.org/) (OBS) that supports all of them!
 ### pacman - Arch (btw), Endeavour, Manjaro
 For distros using `pacman`:
 ```sh
-pacman -Ss <package>
-# not to be confused with -Qs, which only Queries local packages
+pacman -Ss <package>  # not to be confused with -Qs, which only Queries local packages
 ```
 Your AUR helper may provide its own options in addition.
 
@@ -83,8 +81,7 @@ various distro-isms!
 ### xbps - Void
 Disclaimer: I use Void btw. 
 ```sh
-xbps-query -Rs <package>  # to search for a package in the Repositories, 
-without -R, you're only searching through installed packages
+xbps-query -Rs <package>  # to search for a package in the Repositories, without -R, you're only searching through installed packages
 ```
 
 For web searches, try 
