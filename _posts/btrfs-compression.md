@@ -90,6 +90,12 @@ duperemove --hashfile=steam-hashfile -drh ~/.local/share/Steam/
 
 Enjoy the extra space ~~and delayed, but always looming threat of running out...~~
 
+## Further reading
+- [Btrfs compression and how to use it | Forza's Ramblings](https://wiki.tnonline.net/w/Btrfs/Compression)
+- [Btrfs - Arch Wiki](https://wiki.archlinux.org/title/Btrfs#Configuring_the_file_system)
+- [BTRFS Documentation](https://btrfs.readthedocs.io)
+- [Duperemove by markfasheh](https://markfasheh.github.io/duperemove/)
+
 ### Date Published: 2023_08_05 (YYYY_MM_DD)
 
 ### Written by: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
