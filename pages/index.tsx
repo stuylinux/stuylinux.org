@@ -31,7 +31,7 @@ const Home = (props: Props) => {
 				<div id={styles.social_media_links}>
 					<p>
 						Join us on&nbsp;
-						<a href="https://stuyactivities.org/stuylinux">
+						<a href="https://stuyactivities.org/linux">
 							StuyActivities
 						</a>
 					</p>
