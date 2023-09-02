@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+
+{% set postsindex %} {% include "styles/postsindex.css" %} {% endset %}
+<style>
+	{{ postsindex | cssmin | safe }}
+</style>
+
+<h1 class="title">Stuy Linux Posts</h1>
+
+{% set postlist = collections.posts %} {% include "components/postlist.njk" %}

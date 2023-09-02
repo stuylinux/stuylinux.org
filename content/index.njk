@@ -2,16 +2,18 @@
 layout: layouts/base.njk
 ---
 
+{% set homecss %} {% include "styles/home.css" %} {% endset %}
+<style>
+	{{ homecss | cssmin | safe }}
+</style>
+
+<section>
 <h1>Stuyvesant Linux Club</h1>
 <div id="content">
 	<p>
-		Stuy Linux is a new initiative to promote the use of
+		Stuy Linux is Stuyvesant's only initiative to promote the use of
 		Free/Libre Open Source Software (FLOSS) programs and the
 		GNU/Linux projects.
-	</p>
-	<p>
-		This site is still under construction, so check back
-		soon!
 	</p>
 </div>
 <div id="social_media_links">
@@ -35,4 +37,4 @@ layout: layouts/base.njk
 		The posts page (or blog?) is functioning! Check out our <Link href="/posts">many blog posts</Link>!
 	</p>
 </div>
-{% set postlist = collections.posts %} {% include "components/postlist.njk" %}
+</section>

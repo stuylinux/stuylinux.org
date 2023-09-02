@@ -29,12 +29,11 @@ a {
 	height: 55px;
 }
 
-
 #main_content {
 	width: 92%;
 	max-width: 1000px;
 	margin-inline: auto;
-	min-height: calc(100dvh - (50 + 55px));
+	min-height: calc(100dvh - (50px + 55px));
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
