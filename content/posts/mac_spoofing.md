@@ -8,13 +8,13 @@ While on vacation, I've needed to periodically change, or spoof, my laptop's MAC
 
 Here are the two methods I've used for MAC address spoofing:
 
-For my [Artix linux](https://artixlinux.org) install, I used the following method, which works for systems without NetworkManager (so, generally, anything that isn't GNOME or KDE).
+For my [Artix linux](https://artixlinux.org) installation, I used the following method, which works for systems without NetworkManager (so, generally, anything that isn't GNOME or KDE).
 
-For systems that use NetworkManager, including any systems using GNOME and KDE, should proceed to the second method, which I used for my Fedora+GNOME install.
+Since my [Fedora](https://www.fedoraproject.org/workstation/) installation uses GNOME, I had to use the second method there, which works for all systems that use NetworkManager.
 
 ## For systems not using NetworkManager
 
-1. First install `macchanger`, it's a simple package that is available through the package manager of most distros.
+1. First install `macchanger`, which is a simple package that is available through the package manager of most distros.
 
 ```bash
 apt install macchanger
@@ -24,9 +24,9 @@ dnf install macchanger
 pacman -S macchanger
 ```
 
-2. Next run `ip addr`, which is a preinstalled utility that retrieves network device information. Note the name of the network interface that you are using (there is generally only one or two). It will probably eth0, wlan0, or something along those lines.
+2. Next, run `ip addr`, which is a preinstalled utility that retrieves network device information. Note the name of the network interface that you are using (there is generally only one or two). It will probably be eth0, wlan0, or something along those lines.
 
-Here is an example from my machine, redacted for privacy:
+Here is an example from my machine (redacted for privacy):
 
 ```bash
 leo@artix ~$ ip addr
@@ -44,7 +44,7 @@ leo@artix ~$ ip addr
        valid_lft forever preferred_lft forever
 ```
 
-3. Next, run the following command to view the current MAC address. (which is probably the network card's permanent address)
+3. Next, run the following command to view the current MAC address. (which is probably the network card's permanent MAC address as well)
 
 ```bash
 macchanger --show <YOUR_NETWORK_CARD_NAME>
@@ -82,7 +82,7 @@ Enable networking again and/or turn WiFi back on.
 
 At first, I thought this would be a pain to do with NetworkManager, as it manages most aspects of networking itself, overriding the changes of simple tools like `macchanger`.
 
-However, NetworkManager DOES support MAC address spoofing now (even with multiple types!), and it's even simpler to use than the previous method.
+However, NetworkManager DOES support MAC address spoofing these days (even with multiple types!), and it's even simpler to use than the previous method.
 
 See [this Arch wiki post](https://wiki.archlinux.org/title/NetworkManager#Configuring_MAC_address_randomization) for more in-depth information about NetworkManager and MAC address randomization, but here are some simple steps that I used to turn on MAC address randomization.
 
