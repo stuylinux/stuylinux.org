@@ -32,6 +32,6 @@ Run npkill from the root of whichever directory you would like to scan for `node
 
 In this example, as well as for most users, this will probably be the home folder
 
-![Terminal output](/img/posts/using_npkill/main.png)
+![Terminal output](/posts/using_npkill/main.png)
 
 Note: Some `node_modules/` will be found from apps that require them to work (ie: Discord), so npkill will display a ⚠️ to inform you of this. Generally, you shouldn't delete these.

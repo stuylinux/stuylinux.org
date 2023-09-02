@@ -70,7 +70,8 @@ If you've installed it in a different way than we discussed here, just run the `
 When you first launch PrismLauncher, you'll be asked to set up your language and Java version.
 The OpenJDK installations we installed [earlier](#user-content-downloading-java) should appear. If not, hit "Refresh".
 Select the Java 17 versions if you wish to play modern Minecraft, or Java 8 if you're going for a nostalgia trip. More memory allocated is better, but the default settings are usually good enough.
-![The PrismLauncher prompt for picking a Java installation](/img/posts/minecraft-prismlauncher/java.png)
+
+![The PrismLauncher prompt for picking a Java installation](/posts/minecraft-prismlauncher/java.png)
 
 ### Logging into Minecraft
 
@@ -78,9 +79,9 @@ PrismLauncher isn't a piracy tool! You still need to own Minecraft to use it!
 
 Click the accounts button in the top-right corner and head to "Manage Accounts":
 
-![Menu that appears when "Accounts" - denoted with a gray Steve face icon, is clicked. There is No Default Account, and an option to Manage Accounts.](/img/posts/minecraft-prismlauncher/acc.png)
+![Menu that appears when "Accounts" - denoted with a gray Steve face icon, is clicked. There is No Default Account, and an option to Manage Accounts.](/posts/minecraft-prismlauncher/acc.png)
 
-![The Account Settings menu. It reads "Welcome! If you're new here, you can click the "Add" button to add your Mojang or Minecraft account.](/img/posts/minecraft-prismlauncher/account-settings.png)
+![The Account Settings menu. It reads "Welcome! If you're new here, you can click the "Add" button to add your Mojang or Minecraft account.](/posts/minecraft-prismlauncher/account-settings.png)
 
 Use the sign in options on the right-hand side of the menu to sign in with your Minecraft (Microsoft) account. Although an option for Mojang accounts is provided, they have been phased out - so if you still have one, follow [this guide from Microsoft](https://help.minecraft.net/hc/en-us/articles/4403181904525).
 
@@ -94,7 +95,7 @@ To install an instance of Minecraft, go to the "Add Instance" button in the top-
 
 It will then open a menu where you can choose your version of Minecraft.
 
-![Add Instance - Vanilla](/img/posts/minecraft-prismlauncher/vanilla.png)
+![Add Instance - Vanilla](/posts/minecraft-prismlauncher/vanilla.png)
 
 Scroll down to pick the version you want, and hit OK.
 You do not need to select a mod loader just yet, but if you know what you're doing, you can enable one here.
@@ -122,11 +123,11 @@ Then, you will get an `Optifine_blablabla_MOD.jar` in the same folder as your or
 
 Right-click your Minecraft instance, and hit "Edit".
 
-![A Minecraft instance is right clicked.](/img/posts/minecraft-prismlauncher/rc.png)
+![A Minecraft instance is right clicked.](/posts/minecraft-prismlauncher/rc.png)
 
 In the "Version" tab, hit "Add to Minecraft.jar". Select your `Optifine_blablabla_MOD.jar`.
 
-![The Version tab. "Add to Minecraft.jar" is highlighted.](/img/posts/minecraft-prismlauncher/add.png)
+![The Version tab. "Add to Minecraft.jar" is highlighted.](/posts/minecraft-prismlauncher/add.png)
 
 You are done, and can now launch with OptiFine.
 
@@ -143,27 +144,27 @@ First, right-click and edit the instance settings.
 
 Head to Version, and click "Install Fabric". (While you're here, remove or uncheck OptiFine).
 
-![Fabric has been installed in the Version menu. "Install Fabric" is still highlighted.](/img/posts/minecraft-prismlauncher/fabric.png)
+![Fabric has been installed in the Version menu. "Install Fabric" is still highlighted.](/posts/minecraft-prismlauncher/fabric.png)
 
 Alternatively, you can also hit "Add Instance", and select "Fabric" for the Mod Loader.
-![Creating a new instance with Fabric selected](/img/posts/minecraft-prismlauncher/newinstance.png)
+![Creating a new instance with Fabric selected](/posts/minecraft-prismlauncher/newinstance.png)
 
 Now, head to Mods. Click on "Download Mods".
 
-![We have moved to the Mods menu. "Download Mods" is highlighted.](/img/posts/minecraft-prismlauncher/mods.png)
+![We have moved to the Mods menu. "Download Mods" is highlighted.](/posts/minecraft-prismlauncher/mods.png)
 
 Click on the mods you want (in this case, we are grabbing Sodium, Lithium, and Iris Shaders), and click "Select mod for download" on each one's page.
 The mod's name in the list will be bolded and underlined to show that it is selected.
 
-![The Sodium mod page is open. "Select mod for download" is on the bottom-left corner. Lithium and Iris Shaders are underlined.](/img/posts/minecraft-prismlauncher/select.png)
+![The Sodium mod page is open. "Select mod for download" is on the bottom-left corner. Lithium and Iris Shaders are underlined.](/posts/minecraft-prismlauncher/select.png)
 
 We can use the search bar on top to search for a mod, in this case, Phosphor, and we can select it like the others.
 
-![The Phosphor mod page is open. "Select mod for download" is on the bottom-left corner.](/img/posts/minecraft-prismlauncher/phosphor.png)
+![The Phosphor mod page is open. "Select mod for download" is on the bottom-left corner.](/posts/minecraft-prismlauncher/phosphor.png)
 
 To download the mods, click "Review and confirm". The review page will let you uncheck mods you no longer want.
 
-![The Review window is open. Iris Shaders, Lithium, Phosphor, and Sodium are checked.](/img/posts/minecraft-prismlauncher/review.png)
+![The Review window is open. Iris Shaders, Lithium, Phosphor, and Sodium are checked.](/posts/minecraft-prismlauncher/review.png)
 
 Prism Launcher will then download the mods, and handle installing them for you!
 
