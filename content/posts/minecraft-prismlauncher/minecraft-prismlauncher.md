@@ -133,7 +133,10 @@ You are done, and can now launch with OptiFine.
 
 #### Chem Lab {#chem-lab}
 
-> _honestly at this point fabric jar with lithium and phosphor_ > \- pcao#2918
+```
+honestly at this point fabric jar with lithium and phosphor
+- pcao#2918
+```
 
 A modern way to optimize Minecraft is to use the Fabric mod loader with tools like Sodium, Lithium, and Phosphor, along with Iris Shaders to provide compatibility with OptiFine shaders.
 In fact, these are some of the top mods on [modrinth](https://modrinth.com/mods).
