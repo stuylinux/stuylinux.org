@@ -1,0 +1,40 @@
+{% set postlistcss %} {% include "styles/postlist.css" %} {% endset %}
+<style>
+	{{ postlistcss | cssmin | safe }}
+</style>
+
+<ol reversed class="postlist">
+	{% for post in postlist | reverse %}
+	<li
+		class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}"
+	>
+		<div>
+			<h2>
+				<a href="{{ post.url }}" class="postlist-link">
+					{% if post.data.title %}
+					{{ post.data.title }}
+					{% else %}
+					<code>{{ post.url }}</code>
+					{% endif %}
+				</a>
+			</h2>
+
+			{% if post.data.author %}			
+			{% renderTemplate "njk,md", post.data %}### By {{ author }}{% endrenderTemplate %}
+			{% else %}
+			<h3>Written by somebody unknown</h3>
+			{% endif %}
+
+			{% if post.data.description %}
+			<h3>{{ post.data.description }}</h3>
+			{% endif %}
+
+			<time
+				class="postlist-date"
+				datetime="{{ post.date | htmlDateString }}"
+				>{{ post.date | readableDate }}</time
+			>
+		</div>
+	</li>
+	{% endfor %}
+</ol>

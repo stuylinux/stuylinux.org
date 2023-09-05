@@ -1,28 +1,23 @@
 {
-	"name": "stuywlc",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"dependencies": {
-		"next": "^12.3.4",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"remark": "^14.0.2",
-		"remark-custom-heading-id": "^1.0.1",
-		"remark-gfm": "^3.0.1",
-		"remark-html": "^15.0.2"
-	},
-	"devDependencies": {
-		"@types/node": "18.0.6",
-		"@types/react": "18.0.15",
-		"@types/react-dom": "18.0.6",
-		"eslint": "8.20.0",
-		"eslint-config-next": "12.2.2",
-		"typescript": "4.7.4"
-	}
+  "name": "stuylinux",
+  "version": "1.0.0",
+  "description": "The StuyLinux Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf _site/ && npx @11ty/eleventy",
+    "dev": "rimraf _site/ && npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "clean-css": "^5.3.2",
+    "rimraf": "^5.0.1"
+  },
+  "dependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-attrs": "^4.1.6"
+  }
 }

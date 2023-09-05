@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+
+{% set postcss %} {% include "styles/post.css" %} {% endset %}
+<style>
+	{{ postcss | cssmin | safe }}
+</style>
+
+<section>
+	<h1>{{ title }}</h1>
+
+	{% if description %}
+	<h2>{{ description }}</h2>
+	{% endif %}
+
+	{% if author %}
+	{% set authorscope = { author: author } %} {# Janky workaround to create a fake scope to pass to renderTemplate #}
+	
+	{% renderTemplate "njk,md", authorscope %}## By {{ author }}{% endrenderTemplate %}
+	{% else %}
+	<h2>Written by somebody unknown</h2>
+	{% endif %}
+	<p>
+		<time class="post-date" datetime="{{ date | htmlDateString }}">
+			{{ date | readableDate }}
+		</time>
+	</p>
+</section>
+
+<article>
+	{{ content | safe }}
+</article>
+
+<a id="bottom_link" href="/">go home</a>
