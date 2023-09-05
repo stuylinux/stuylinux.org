@@ -8,12 +8,12 @@ Sure, the official Minecraft launcher supports GNU/Linux, but to be honest, if I
 
 Let's use something more convenient and free and open source, while also making it easy to install your favorite mods!
 
-## What is Prism Launcher? {#downloading-java}
+## What is Prism Launcher?
 
 [Prism Launcher](https://prismlauncher.org/) is a free and open source Minecraft launcher, with built in multi-account, multi-instance, and modding support!
 It uses QT for its UI, so if you're a KDE user, you'll feel just at home! If you use something else, never fear! QT works on practically all desktop platforms, and it's quite lightweight!
 
-### Downloading Java
+### Downloading Java {#downloading-java}
 
 Minecraft runs on Java, so we'll need to install it first!
 
@@ -68,7 +68,7 @@ $ ./PrismLauncher-Linux-6.3-x86_64.AppImage
 
 If you've installed it in a different way than we discussed here, just run the `prismlauncher` program, either via command line or in your application list!
 When you first launch PrismLauncher, you'll be asked to set up your language and Java version.
-The OpenJDK installations we installed [earlier](#user-content-downloading-java) should appear. If not, hit "Refresh".
+The OpenJDK installations we installed [earlier](#downloading-java) should appear. If not, hit "Refresh".
 Select the Java 17 versions if you wish to play modern Minecraft, or Java 8 if you're going for a nostalgia trip. More memory allocated is better, but the default settings are usually good enough.
 
 ![The PrismLauncher prompt for picking a Java installation](/posts/minecraft-prismlauncher/java.png)
@@ -106,7 +106,7 @@ You can select it and hit the play button, and then it will download the Minecra
 
 #### OptiFine
 
-OptiFine is a bit of a pain to install, and there are much more convenient (and FLOSS) options nowadays. See [below](#user-content-chem-lab).
+OptiFine is a bit of a pain to install, and there are much more convenient (and FLOSS) options nowadays. See [below](#chem-lab).
 
 Head to the [OptiFine download page](https://optifine.net/downloads) (hint: click "Show all versions" for older versions of Minecraft).
 Click "(Mirror)" (the download button leads to an ad link), and download the jar.

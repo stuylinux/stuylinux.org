@@ -1,5 +1,8 @@
 const CleanCSS = require("clean-css");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const markdownIt = require('markdown-it');
+const markdownItAnchor = require('markdown-it-anchor');
+const markdownItAttrs = require('markdown-it-attrs');
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("**/*.jpg");
@@ -38,6 +41,16 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+	const markdownItOptions = {
+		html: true // you can include HTML tags
+	}
+	
+	const markdownItAnchorOptions = {
+		level: 2 // anchors will only be applied to h2 level headers and below but not h1
+	}
+	
+	eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).use(markdownItAnchor, markdownItAnchorOptions).use(markdownItAttrs))
 
 	return {
 		dir: {
