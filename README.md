@@ -6,15 +6,13 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
 
 ## About
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is an [11ty](https://www.11ty.dev/) project.
 
 For analytics, we use [Umami](https://umami.is/).
 Why? Because Google Analytics should be (and in some places is) illegal.
