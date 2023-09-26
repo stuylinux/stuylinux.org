@@ -70,7 +70,7 @@ Now, we can mount the device on a mount point (basically a specific folder for t
 sudo mount /dev/zramX /mnt/a
 ```
 
-You can actually omit the target (`/mnt/a`) if you have this device pre-configured in `/etc/fstab`, but that's a blog post for another day!
+You can actually omit the target (`/mnt/a`) if you have this device pre-configured in [`/etc/fstab`](/posts/fstab)!
 
 The filesystem will start out owned by root, so you may have to run this command (replace `egg` with your own username, and `/mnt/a` with the folder you want to take ownership of):
 
