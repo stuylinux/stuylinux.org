@@ -1,5 +1,5 @@
 ---
-title: Mini CTF (and PicoCTF!)
+title: A Mini CTF (and PicoCTF!)
 date: 2023-10-29
 author: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
 ---
