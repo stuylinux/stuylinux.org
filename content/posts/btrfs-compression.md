@@ -50,7 +50,7 @@ mount -o compress=zstd [filesystem]
 ```
 
 Alternatively, if you would like this to always be applied when your filesystem
-is mounted, you can set this in your `/etc/fstab` file (blogpost pending!):
+is mounted, you can set this in [your `/etc/fstab` file](/posts/fstab):
 
 ```
 /dev/sda2 / btrfs defaults,compress=zstd 0 1
