@@ -47,12 +47,11 @@ WantedBy=multi-user.target
 
 If you'd like your service to automatically restart when it crashes, you can use the `Restart=on-failure` directive to tell systemd to do so. It is recommended to set a `RestartSec` interval so systemd doesn't repeatedly spam your system with a buggy process.
 
-In order for systemd to automatically start your service when the rest of the system is ready, you need to set the
+In order for systemd to automatically start your service when the rest of the system is ready, you need to set the WantedBy block as shown below.
 ```
 [Install]
 WantedBy=multi-user.target
 ```
-block.
 
 One interesting directive you make like to have, in case your service depends on something else (like networking), is the `After` directive.
 For the Official Stuy Linux SSH.StuyLinux.Org Starting Service:tm:, we use `After=sshd.service` to make sure the SSH server is ready for forwarding.
