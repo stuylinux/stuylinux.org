@@ -138,6 +138,6 @@ By [Nicolai](https://github.com/geode42) (94 chars Python, 121 chars Deno)
 
 And here's a solution that uses way too much threading because (and I quote) "someone had to do it":
 ```py
-import threading; result_list = []; lock = threading.Lock(); [thread.start() and thread.join() for thread in [threading.Thread(target=lambda line: (lock.acquire(), result_list.append(int(''.join(filter(str.isdigit, line))[0]+''.join(filter(str.isdigit, line))[-1])), lock.release()), args=(l,)) for l in open("file.txt", "r").readlines()]]; print(sum(result_list))
+import threading as np; result_list = []; lock = np.Lock(); [thread.start() and thread.join() for thread in [np.Thread(target=lambda line: (lock.acquire(), result_list.append(int(''.join(filter(str.isdigit, line))[0]+''.join(filter(str.isdigit, line))[-1])), lock.release()), args=(l,)) for l in open("file.txt", "r").readlines()]]; print(sum(result_list))
 ```
-By [Axel](https://discord.com/users/723547672467996681) (364 chars)
+By [Axel](https://discord.com/users/723547672467996681) (356 chars)
