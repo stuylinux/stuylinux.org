@@ -1,11 +1,11 @@
 ---
 title: Installing Programming Language Toolchains
-date: 2023-11-24
+date: 2023-12-02
 author: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
 ---
 Plenty of programmers use Linux because it's super simple to set up tooling for pretty much any programming language you'd need!
 
-We'll look at getting set up with a few common languages.
+For our meeting on December 1st, we looked at getting set up with a few common languages, and used them to try out this [year's Advent of Code challenge](https://adventofcode.com/2023/day/1).
 
 # Python
 Python is such a ubiquitous programming language, most Linux distros come with it preinstalled, or even use it for their package manager!
@@ -113,3 +113,31 @@ cargo build
 takes care of it all, and will leave a binary nestled in the `target` folder.
 
 Welcome to the land of zero cost abstractions and blazingly fast code, along with the lingering smell of [crab](https://rustacean.net/).
+
+# Adventuring to Advent
+This year's advent calendar [started](https://adventofcode.com/2023/day/1) with a little problem about finding the first and last digits in a line.
+
+Since this whole meeting was about installing and using programming languages, we went ahead and took shots at solving the problem.
+
+Out of pure spite, Lenny decided to make a list-comprehension one-liner, which inspired some of the others to do so as well...
+
+Below are some of our solutions:
+```py
+with open("file.txt") as file: print(sum([int([z for z in line if z.isdigit()][0] + [z for z in line if z.isdigit()][-1]) for line in file.readlines()]))
+```
+By [Lenny](https://github.com/leomet07) (153 chars)
+```
+
+```py
+f=open('a');print(sum((a:=[*filter(str.isdigit,i)])and int(a[0]+a[-1])for i in f.readlines()))
+```
+```js
+console.log(Deno.readTextFileSync('a').replace(/[^\d\n]/g,'').split('\n').map(i=>+(i[0]+i.slice(-1))).reduce((a,i)=>a+i))
+```
+By [Nicolai](https://github.com/geode42) (94 chars Python, 121 chars Deno)
+
+And here's a solution that uses way too much threading because (and I quote) "someone had to do it":
+```py
+import threading; result_list = []; lock = threading.Lock(); [thread.start() and thread.join() for thread in [threading.Thread(target=lambda line: (lock.acquire(), result_list.append(int(''.join(filter(str.isdigit, line))[0]+''.join(filter(str.isdigit, line))[-1])), lock.release()), args=(l,)) for l in open("file.txt", "r").readlines()]]; print(sum(result_list))
+```
+By [Axel](https://discord.com/users/723547672467996681) (364 chars)
