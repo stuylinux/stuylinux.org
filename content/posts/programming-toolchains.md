@@ -126,7 +126,6 @@ Below are some of our solutions:
 with open("file.txt") as file: print(sum([int([z for z in line if z.isdigit()][0] + [z for z in line if z.isdigit()][-1]) for line in file.readlines()]))
 ```
 By [Lenny](https://github.com/leomet07) (153 chars)
-```
 
 ```py
 f=open('a');print(sum((a:=[*filter(str.isdigit,i)])and int(a[0]+a[-1])for i in f.readlines()))
