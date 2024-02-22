@@ -7,6 +7,7 @@ const markdownItAttrs = require('markdown-it-attrs');
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("**/*.jpg");
 	eleventyConfig.addPassthroughCopy("**/*.png");
+	eleventyConfig.addPassthroughCopy("**/*.gif");
 	eleventyConfig.addPassthroughCopy("**/*.svg");
 
 	eleventyConfig.addFilter("cssmin", function (code) {
