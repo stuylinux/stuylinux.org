@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+#content {
+    font-size: 1.3rem;
+    margin-block: 10px;
+}
+
+#content>* {
+    margin-block: 1rem;
+}
