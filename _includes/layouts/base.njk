@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="/favicon.png" />
-
-		<title>{{ title or metadata.title }}</title>
-		<meta
-			name="description"
-			content="{{ description or metadata.description }}"
-		/>
-		<!-- capture the CSS content as a Nunjucks variable -->
-		{% set css %} {% include "styles/globals.css" %} {% endset %}
-		<!-- feed it through our cssmin filter to minify -->
-		<style>
-			{{ css | cssmin | safe }}
-		</style>
-	</head>
-	<body>
-		{% include "components/navbar.njk" %}
-		<main id="main_content">
-			{{ content | safe }}
-		</main>
-		{% include "components/footer.njk" %}
-		<script
-			async
-			defer
-			data-website-id="a437f55a-b94a-4bce-9231-eb4ee3b7d114"
-			src="https://umami-fork-alpha.vercel.app/umami.js"
-		></script>
-	</body>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="/favicon.png"/>
+        <title>{{ title or metadata.title }}</title>
+        <meta
+        name="description" content="{{ description or metadata.description }}"/> <!-- capture the CSS content as a Nunjucks variable -->
+        {% set css %}
+        {% include "styles/globals.css" %}
+        {% endset %}
+        <!-- feed it through our cssmin filter to minify -->
+        <style>
+            {{css | cssmin | safe}}</style>
+    </head>
+    <body>
+        {% include "components/navbar.njk" %}
+        <main id="main_content">
+            {{ content | safe }}
+        </main>
+        {% include "components/footer.njk" %}
+        <script
+            async
+            defer
+            data-website-id="a437f55a-b94a-4bce-9231-eb4ee3b7d114"
+            src="https://umami-fork-alpha.vercel.app/umami.js"></script>
+    </body>
 </html>

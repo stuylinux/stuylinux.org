@@ -2,43 +2,37 @@
 layout: layouts/base.njk
 ---
 
-{% set homecss %} {% include "styles/home.css" %} {% endset %}
+{% set aboutcss %}
+{% include "styles/about.css" %}
+{% endset %}
 <style>
-	{{ homecss | cssmin | safe }}
-</style>
-
+    {{aboutcss | cssmin | safe}}</style>
 <section>
-	<h1>About Us</h1>
-	<div id="content">
-		<p>
-			Stuy Linux is Stuyvesant's only initiative to promote the use of
-			Free/Libre Open Source Software (FLOSS) programs and the GNU/Linux
-			projects.
-		</p>
-		<p>
-			We work in collaboration with the
-				<a href="https://www.stuycs.org/" target="_blank">Stuyvesant CS department</a>
-			to host weekly meetings that provide students with an 
-			extracurricular space that encourages them to explore, investigate,
-			and understand the inner workings of the software that runs the
-			world around them. We host our own shared compute cluster on an
-			Orange Pi with Linux Containers (LXD), allowing us to provide each
-			member with their own personal root-access Alpine Linux environment
-			for experiments with different tools. In addition, we host our own
-			IRC server,
-				<a href="https://irc.stuylinux.org" target="_blank">irc.stuylinux.org</a>
-			bridged to a Gitter/Matrix channel (<a href="https://matrix.to/#/#stuy-linux:gitter.im" target="_blank">#stuy-linux:gitter.im</a>) and a
-				<a href="https://discord.gg/8pkfP7mU78" target="_blank">Discord server</a>
-			to engage with our community.
-		</p>
-		<p>
-			Meetings revolve around collaborative exercises in real-life
-			applications of software tools written in any language available,
-			from C to Rust, Go to Python, or JavaScript to Java! After
-			developing problem-solving skills with these technologies, we tackle
-				<a href="https://picoctf.org" target="_blank">CMU picoCTF</a>
-			challenges to emphasize how rewarding it can be to explore different
-			avenues in the software and cybersecurity world.
-		</p>
-	</div>
+    <h1>About Us</h1>
+    <div id="content">
+        <p>
+            Stuy Linux is Stuyvesant's only initiative to promote the use of Free/Libre Open Source Software (FLOSS) programs and
+            the GNU/Linux projects.
+        </p>
+        <p>
+            We work in collaboration with the
+            <a href="https://www.stuycs.org/" target="_blank">Stuyvesant CS department</a>
+            to host weekly meetings that provide students with an extracurricular space that encourages them to explore,
+            investigate, and understand the inner workings of the software that runs the world around them. We host our own shared
+            compute cluster on an Orange Pi with Linux Containers (LXD), allowing us to provide each member with their own personal
+            root-access Alpine Linux environment for experiments with different tools. In addition, we host our own IRC server,
+            <a href="https://irc.stuylinux.org" target="_blank">irc.stuylinux.org</a>
+            bridged to a Gitter/Matrix channel (<a href="https://matrix.to/#/#stuy-linux:gitter.im" target="_blank">#stuy-linux:gitter.im</a>) and a
+            <a href="https://discord.gg/8pkfP7mU78" target="_blank">Discord server</a>
+            to engage with our community.
+        </p>
+        <p>
+            Meetings revolve around collaborative exercises in real-life applications of software tools written in any language
+            available, from C to Rust, Go to Python, or JavaScript to Java! After developing problem-solving skills with these
+            technologies, we tackle
+            <a href="https://picoctf.org" target="_blank">CMU picoCTF</a>
+            challenges to emphasize how rewarding it can be to explore different avenues in the software and cybersecurity
+            world.
+        </p>
+    </div>
 </section>

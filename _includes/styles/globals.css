@@ -40,3 +40,7 @@ a {
 li {
 	list-style-type: none;
 }
+	
+h1 {
+	font-size: 2rem;
+}
