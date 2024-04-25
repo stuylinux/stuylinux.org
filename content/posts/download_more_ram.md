@@ -2,6 +2,7 @@
 title: RAM compression with `zram`
 date: 2023-02-20
 author: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
+description: If you ever wanted to "download more RAM", try using zram, the memory compression module in the Linux kernel, to create extra swap space!
 ---
 
 ## What's a zram?
