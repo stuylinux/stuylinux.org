@@ -12,6 +12,13 @@ We'll be using the Course and Exam Description on the [College Board website for
 # The Course
 First things first, why did they put Legos as the cover image of the manual?? I thought APCSP was the one with block coding...
 
+> Determine an appropriate program design to solve a problem or accomplish a task (not assessed)
+Oh and it turns out actually knowing how to program isn't a skill that matters to the AP exam...
+
+There's also a "required" "big idea" about the "impact of computing" which is **entirely untested** and basically just tells you to follow the law and be ""ethical""...
+The Official Stuy Linux solution is just to be FOSS, you'll get enough people bikeshedding in your issue tracker to take care of all that for you :P
+
+
 ## Unit 1 - Primitive Types
 The primitive types (relevant to APCSA) are:
 - `int` - stores signed integer numbers in a 32-bit (4-byte) space, thus the limits are
@@ -49,7 +56,7 @@ System.out.println(d);
 
 When you specify the value of a variable in code, such as `-123`, `1.414`, `false`, you are using a literal.
 
-Notice that unlike math, the `=` sign means "take the value on the right and store it in the variable (label) on the left". 
+Notice that unlike math, the `=` sign means "take the value on the right and store it in the variable (label) on the left".
 
 ### Math
 Math can only be done with `int` and `double` variables.
@@ -112,18 +119,18 @@ int a = 1;
 ```
 
 Alternatively, if you want to store only the integral part of a `double`, you can case it to `int` like so:
-```
+```java
 double b = 1.6;
 int a = (int) b;  // a = 1
 ```
 
 Astute readers will notice that this acts as a floor function. If one wants to round instead, they can use this idiom.
-```
+```java
 double b = 1.6;
 int a = (int) (b + .5);  // a = 2
 ```
 or for negative numbers
-```
+```java
 double b = -2.5;
 int a = (int)(b - .5);  // a = -3
 ```
@@ -131,6 +138,8 @@ Casts have highest precedence, and will apply to the value immediately to the ri
 
 ##### Operator Precedence
 Java will use [its version of the order of operations](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html) to evaluate an expression. Operators on the same level are evaluated left to right.
+
+For the basic arithmetic expressions, this is effectively an extended PEMDAS.
 
 You can add parenthesis to specify that you want a certain section to be evaluated first.
 
@@ -143,23 +152,63 @@ Examples:
 5 % 3 * 4 == 8
 ```
 
+## Unit 2+5+9 - Using Objects & Writing Classes & Inheritance
+Unit 2 is really using functions, which are associated with objects because Java:tm:
+
+### Method Signatures and Overloading
+I prefer [prototypes](https://en.wikipedia.org/wiki/Function_prototype), which adds in the name of the function defined.
+
+### Classes
+~~Those things you have at school.~~ The definitions or (as the CED calls it) "formal implementation, or blueprint, of the attributes and behaviors of an object."
 
 
-## Unit 2 - Using Objects
+
+#### Constructors
+Constructors are just functions that use side effects to define how a new instance of the class will be made. Constructors does not have a `return` type, nor does it `return` anything. Instead, they are called with the `new` keyword.
+
+
+
+#### A Complete Class
+```java
+public class Calculator {  // valid names work like variables, just conventionally use UpperCamelCase and Nouns
+
+
+}
+```
+
+
+
+### Objects
+Keeping with the "blueprint" analogy, objects are the constructed buildings made _from_ the blueprints. Based on the definitions in the blueprints, you know exactly what features the building has, and you can construct as many copies of that building as you want ([William J. Levitt](https://en.wikipedia.org/wiki/Levittown) wants to know your location).
+
+Classes can be used just like types to declare variables, and so you can define a String variable like so:
+
+#### Calling Constructors
+```java
+
+```
+
+
+
+### Wrapper Classes
+
+#### Helpful Functions
+#### Autoboxing
+
+### Co
+
+
+The `new` keyword can be used to call a constructor function.
 
 ## Unit 3 - Boolean Expressions and `if` Statements
 
 ## Unit 4 - Iteration
-
-## Unit 5 - Writing Classes
 
 ## Unit 6 - Array
 
 ## Unit 7 - ArrayList
 
 ## Unit 8 - 2D Array
-
-## Unit 9 - Inheritance
 
 ## Unit 10 - Recursion
 Ooh! This one is going to be crazy right!? It's gotta have QuickSort and TimSort and Tim's QuickSort and BFS and DFS and NTFS and all that good stuff, yeah !?
