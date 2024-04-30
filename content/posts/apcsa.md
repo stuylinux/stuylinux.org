@@ -1,6 +1,6 @@
 ---
 title: APCSAAA
-date: 2024-04-26
+date: 2024-04-30
 author: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
 description: It's almost AP season, so let's review the entire AP curriculum! (and make fun of the exam guidelines)
 ---
