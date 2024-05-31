@@ -6,6 +6,12 @@ author: Lenny Metlitsky [@leomet07](https://github.com/leomet07)
 
 To install the C and C++ compilers of the GNU project, you need to install a couple packages. This includes the gcc/g++ compilers themselves, cmake, and some other dependencies. Here are the commands for some common distributions:
 
+## Alpine
+```
+apk add build-base
+```
+Source: https://wiki.alpinelinux.org/wiki/GCC
+
 ## Fedora (and its derivatives)
 
 ```bash
