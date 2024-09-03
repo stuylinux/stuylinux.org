@@ -3,6 +3,7 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItAttrs = require('markdown-it-attrs');
+const markdownItFootnote = require('markdown-it-footnote');
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("**/*.jpg");
@@ -51,7 +52,7 @@ module.exports = function (eleventyConfig) {
 		level: 2 // anchors will only be applied to h2 level headers and below but not h1
 	}
 	
-	eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).use(markdownItAnchor, markdownItAnchorOptions).use(markdownItAttrs))
+	eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).use(markdownItAnchor, markdownItAnchorOptions).use(markdownItAttrs).use(markdownItFootnote))
 
 	return {
 		dir: {
