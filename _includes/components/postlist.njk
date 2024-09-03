@@ -19,8 +19,8 @@
 				</a>
 			</h2>
 
-			{% if post.data.author %}			
-			{% renderTemplate "njk,md", post.data %}### By {{ author }}{% endrenderTemplate %}
+			{% if post.data.author %}
+			{% renderTemplate "njk,md", post %}### By {{ data.author }}{% endrenderTemplate %}
 			{% else %}
 			<h3>Written by somebody unknown</h3>
 			{% endif %}
