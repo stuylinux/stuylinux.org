@@ -2,14 +2,15 @@
 title: "Stuy Linux Infrastructure: Orange you glad we got a Pi?"
 date: 2024-09-03
 author: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
+description: Let's talk about at the web of software that runs our SSH network!
 ---
 
 One of the staples of our meetings is the Orange Pi single-board computer, 
 which hosts the virtual containers that provide fully-featured Linux 
 environments to our members.
 
-Since we just reworked the way the system works, I suppose now is a pretty good 
-time to document how it all works!
+Since we just reworked the way the system works, I suppose now is a Pretty Good
+Time to document how it all works!
 
 ## Containing our constrained resources
 Instead of provisioning full-sized virtual machines, which — for a room of 
