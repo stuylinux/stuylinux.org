@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("**/*.png");
 	eleventyConfig.addPassthroughCopy("**/*.gif");
 	eleventyConfig.addPassthroughCopy("**/*.svg");
+	eleventyConfig.addPassthroughCopy("**/*.webp");
 
 	eleventyConfig.addFilter("cssmin", function (code) {
 		return new CleanCSS({}).minify(code).styles;
