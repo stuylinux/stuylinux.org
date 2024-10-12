@@ -1,6 +1,6 @@
 ---
 title: (no)VNC, Justin Bieber, Hannah Montana, and (actual) Stuy Linux
-date: 2024-09-09
+date: 2024-10-11
 author: David Chen [@TheEgghead27](https://github.com/TheEgghead27)
 description: "Using (no)VNC to access virtual machines with the best distros: Justin Bieber Linux, Hannah Montana Linux, and Stuy Linux!"
 ---
@@ -14,8 +14,7 @@ To demo these distros at our meeting, we used a slightly overcomplicated way
 (which took me way too many whiteboard diagrams to describe) to stream a 
 virtual machine to the StuyCS display.
 
-## A Virtual Machine?? In the Containers Club?? I must inquire about this 
-further with my supervisor post-haste!!
+## A Virtual Machine?? In the Containers Club?? I must inquire about this further with my supervisor post-haste!!
 Since the main appeal of these distros are their desktop applications ~~and 
 last I checked, they were not on the Incus/LXD image servers~~, we could not 
 use our usual command-line container format for this meeting.
