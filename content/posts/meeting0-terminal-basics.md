@@ -9,9 +9,9 @@ The first meeting was a success, and we were glad to see some new (and old) face
 
 
 ## Member Specific Containers On Our Server
-You may have heard of a Virtual Machine before (basically a software emulation of a computer).
+You may have heard of a Virtual Machine before (basically a program that simulates a computer in software).
 We have something similar to that for each member, as they are each systems with isolated environments (we use containers, [here](https://stuylinux.org/posts/infra-containers/) is a blog post with more details on our setup).
-During this meeting, we made containers for each of the new members present. Now, people can use these containers for a better experience during a meeting.
+During this meeting, we made containers for our new members so they can enjoy full root access to a Linux system.
 
 ### Using Your Container
 When we setup our server before a meeting starts, a member can access their account on the server using a simple command entered into a terminal:
@@ -21,7 +21,7 @@ When we setup our server before a meeting starts, a member can access their acco
 
 To run the `ssh` command, you would provide the remote machine `ssh.stuylinux.org` on `port 2221`, and your username.
 
-### Good Pratices For Your Container
+### Good Practices For Your Container
 When you log onto your container, it is usually a good idea to update the system. To update your container, you can use the command `apk upgrade`.
 
 You should also change your password from the default password. To change your password, use the `passwd` command.
@@ -49,10 +49,17 @@ In a terminal, there are a couple shorthands to make your life a bit easier:
 To list all the contents of a directory, use the `ls` command.
 If you provide a path to a directory, you can list the contents of that directory.
 If you just run `ls`, you would list the contents of the current working directory.
+If you add an argument, running `ls -l`, you would list out the files in your current working directory in list format. See `ls --help` for more options.
+
 
 If I am in `/home` and I want to list the contents in `/home/user/Downloads`, I can run `ls /home/user/Downloads` or `ls user/Downloads`.
 
-### `cat` Printing a File's Contents
+### `cat`: Printing a File's Contents
 To print a file's contents to the terminal, you can run `cat` followed by a filename/path to a file.
 
 If I am in `/home` and I want to "cat" (print out) `/home/info.txt`, I would run `cat /home/info.txt`, or `cat info.txt`.
+
+### `file`: Checking a File's Type
+Because file extensions are not always accurate (or present!), it is useful to be able to check what type of file you are handling.
+
+If I have a file `mystery` in my current working directory, I would run `file mystery` to get more information about the file.
