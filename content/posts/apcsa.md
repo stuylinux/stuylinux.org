@@ -127,7 +127,7 @@ int a = 1;
 a == 1.0;  // this also works, because `int`s are automatically cast to `double` when needed
 ```
 
-Alternatively, if you want to store only the integral part of a `double`, you can case it to `int` like so:
+Alternatively, if you want to store only the integral part of a `double`, you can cast it to `int` like so:
 ```java
 double b = 1.6;
 int a = (int) b;  // a = 1
