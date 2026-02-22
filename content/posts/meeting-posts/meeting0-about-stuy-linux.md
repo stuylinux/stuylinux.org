@@ -48,7 +48,7 @@ We know some of you might be wondering why we use Linux. Here are our four main 
 ### Security & Transparency
 - If software is community driven, then there can be more frequent and active fixes to vulnerabilities. 
 - For example, when there was a big [`xz` vulnerability](https://en.wikipedia.org/wiki/XZ_Utils_backdoor), the devs quickly fixed it up so people stayed secure.
-- This also means the community reviews the software. Software code is usually managed with a version control system, such as [git](https://git-scm.com/). There are web platforms that exist as frontends for git, such as [GitHub](https://github.org) (which is where [this website](https://github.org/stuylinux/stuylinux.org) is managed!) If there is any suspicious code, the community will likely call it out, especially if more people are using it.
+- This also means the community reviews the software. Software code is usually managed with a version control system, such as [git](https://git-scm.com/). There are web platforms that exist as frontends for git, such as [GitHub](https://github.org) (which is where [this website](https://github.org/stuylinux/stuylinux.org) is managed!) If there is any suspicious code, the community will likely call it out, especially if more people are using it. In addition, users can post their own issues with the software, or open pull requests (suggested modifications to the code for quality-of-life improvements).
 
 ### Performance + Longevity
 - A lot of old computers get thrown out, which cause e-waste to be very prevalant. Linux has a lot of support for these older computers, so you can easily put them to good use.
