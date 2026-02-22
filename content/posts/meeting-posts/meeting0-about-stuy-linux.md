@@ -2,9 +2,9 @@
 title: "Meeting 0 Notes: About Stuy Linux"
 author: Axel Stahl [@axelKeizoStahl](https://github.com/axelKeizoStahl)
 date: 2026-02-21
+description: First Meeting of the 2025-2026 School Year!
 ---
 
-# Meeting 0: First Meeting of the 2025-2026 School Year!
 This first meeting served as an interest one for new and returning members.
 We were happy to see all the familiar faces and to meet new people!
 
@@ -77,4 +77,4 @@ Our club has acquired some tech over the years that we use frequently.
 
 ## Logistics
 - Join our [Discord](https://discord.gg/8pkfP7mU78)!
-- Message Axel (@axel on discord) or Matthew (@Windward on discord) about ideas for hosting your own meeting.
+- Message Axel (@axel on Discord) or Matthew (@Windward on Discord) about ideas for hosting your own meeting.
