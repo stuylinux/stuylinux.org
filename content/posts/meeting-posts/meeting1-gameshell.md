@@ -92,3 +92,25 @@ The command to start are these two here:
 $ wget https://github.com/phyver/GameShell/releases/download/latest/gameshell.sh
 $ bash gameshell.sh
 ```
+
+You can also clone the Repo and run `./start.sh`
+
+
+### First Steps
+Follow the steps shown on screen.
+It's useful to read the directions/explanations shown on the scroll.
+
+As shown on the screen use run `gsh goal` to see the first goal, to go to the top of the main tower in the castle.
+Also note that there is a list of commands. As you go on, you will see commands you may not know. Using this explanation and the man pages will be very useful.
+
+First, running `ls` shows us there is a `Castle` directory.
+
+`cd Castle`, then `ls` shows there is a `Main_tower`.
+
+Continuing this brings us to `Top_of_the_tower`.
+
+Then, we run `gsh check` and see that we have completed this mission. 
+
+Now, we can move on to the rest of these missions.
+
+## Enjoy Your Playing!!!
