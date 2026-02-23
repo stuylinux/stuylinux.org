@@ -19,7 +19,7 @@ In the [cybersecurity](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecu
 ## Getting Started
 You must register for an account at the official [picoCTF website](https://picoctf.org) in order to complete practice challenges or play in competitions. For our purposes, when registering:
 - 18+ is fine for the age group to bypass parent verification
-- 10282 (Stuy's postal code) can be used as the postal code
+- `10282` (Stuy's postal code) can be used as the postal code
 - Middle/High School student can be used for the player type
 
 Once registered, you can then start playing some practice challenges! However, here are a few things to keep in mind.
