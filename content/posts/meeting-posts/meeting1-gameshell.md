@@ -95,7 +95,7 @@ $ bash gameshell.sh
 You can also clone the repository and alternatively run the game with the following commands:
 ```
 $ git clone https://github.com/phyver/GameShell
-$ ./start.sh`
+$ ./start.sh
 ```
 
 ### First Steps
