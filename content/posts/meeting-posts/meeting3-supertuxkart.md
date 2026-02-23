@@ -38,7 +38,7 @@ When loaded, SuperTuxKart has an option in the bottom of the GUI where you can p
 In addition, you should avoid bananas as well as other weapons fired by other players along the way.
 
 ### SuperTuxKart Modes
-In addition, the landing screen will present you with a variety of options to choose from:
+The landing screen will also present you with a variety of options to choose from:
 - **Story Mode**: This is a single-player overworld where you (as a FOSS mascot) have to save Gnu from the villain, Nolok. You complete challenges first, and then compete in a final race with Nolok in order to defeat them.
 - **Singleplayer**: This is where you can compete in races or a variety of challenges with AI karts.
 - **Splitscreen Multiplayer**: This is where at least two people can compete with each other with a split screen on a single monitor. Since this operates on a single SuperTuxKart instance, individual players have to be configured in the settings, as well as the controllers they will use.
