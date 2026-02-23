@@ -78,7 +78,7 @@ As mentioned earlier, GameShell is the terminal game we'll be playing to teach m
 Here is some history of GameShell from its GitHub page:
 
 > Teaching first-year university students or high schoolers to use a Unix shell is not always the easiest or most entertaining of tasks. GameShell was devised as a tool to help students at the Université Savoie Mont Blanc to engage with a real shell, in a way that encourages learning while also having fun.
-
+>
 > The original idea, due to Rodolphe Lepigre, was to run a standard bash session with an appropriate configuration file that defined "missions" which would be "checked" in order to progress through the game.
 
 ### Getting Started
