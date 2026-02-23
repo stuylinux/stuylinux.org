@@ -69,4 +69,4 @@ Usually, features are unlocked by completing story mode. However, there's a chea
 First, go to wherever the configuration folder is for SuperTuxKart using the `cd` command (usually in `~/.config/supertuxkart/config-0.10`). Then, use a text editor to edit the `players.xml` file. Replace all instances of "none" with "hard". Save the file and relaunch SuperTuxKart. You now have all the features you've ever wanted unlocked!
 
 ## Conclusion
-After our gameplay sessions were over, we ended off the meeting by mentioning that members will be encouraged to host their own meetings in the future [after all, me and Axel are graduating this year :')]! These meetings will hopefully be paired with blog posts (like this one and many others) that will be written by them, so stay tuned on this blog for those!
+After our gameplay sessions were over, we ended off the meeting by mentioning that members will be encouraged to host their own meetings in the future! These meetings will hopefully be paired with blog posts (like this one and many others) that will be written by them, so stay tuned on this blog for those!
