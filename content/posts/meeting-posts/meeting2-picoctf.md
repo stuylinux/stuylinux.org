@@ -1,11 +1,11 @@
 ---
-title: "Meeting 2 Notes: PicoCTF"
+title: "Meeting 2 Notes: picoCTF"
 author: Matthew Gultom [@WindwardIsland](https://github.com/WindwardIsland), Axel Stahl [@axelKeizoStahl](https://github.com/axelKeizoStahl)
 date: 2026-02-22
-description: Ending off the 2025 year by completing PicoCTF challenges!
+description: Ending off the 2025 year by completing picoCTF challenges!
 ---
 
-Even though 2025 wasn't the Year of the Linux Desktop[^1] (while [we had some hope](https://stuylinux.org/posts/2024/)), it was still a great year for Stuy Linux nonetheless, so we decided to end it off with some PicoCTF challenges (plus, we didn't really have any other meeting ideas)!
+Even though 2025 wasn't the Year of the Linux Desktop[^1] (while [we had some hope](https://stuylinux.org/posts/2024/)), it was still a great year for Stuy Linux nonetheless, so we decided to end it off with some picoCTF challenges (plus, we didn't really have any other meeting ideas)!
 
 [^1]: The "Year of the Linux Desktop" is a long-running sarcastic joke that's been around since Linux's inception that basically pokes fun at a particular year when Linux as a desktop OS will become mainstream (which realistically has never happened).
 
@@ -14,10 +14,10 @@ It's important to note what "CTF" even means in order to understand how PicoCTF 
 
 In the [cybersecurity](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) sense (which plays on the original sport that's been around for decades), CTFs are puzzles that involve text strings ("flags") well hidden inside programs that require extensive CS/cybersecurity knowledge to find. These puzzles can come in the form of competitions, such as attack/defense-style CTFs (where players steal flags from other players), jeopardy-style CTFs (where players steal flags from the CTF organizers instead), etc. 
 
-[PicoCTF](https://picoctf.org/) is a competition hosted by CyLab of Carnegie Mellon University mainly geared towards high schoolers (like us!) to help teach cybersecurity skills. However, they also provide [practice challenges](https://play.picoctf.org/practice) that can be completed at our own pace, which is what we did.
+[picoCTF](https://picoctf.org/) is a competition hosted by CyLab of Carnegie Mellon University mainly geared towards high schoolers (like us!) to help teach cybersecurity skills. However, they also provide [practice challenges](https://play.picoctf.org/practice) that can be completed at our own pace, which is what we did.
 
 ## Getting Started
-You must register for an account at the official [PicoCTF website](https://picoctf.org) in order to complete practice challenges or play in competitions. For our purposes, when registering:
+You must register for an account at the official [picoCTF website](https://picoctf.org) in order to complete practice challenges or play in competitions. For our purposes, when registering:
 - 18+ is fine for the age group to bypass parent verification
 - 10282 (Stuy's postal code) can be used as the postal code
 - Middle/High School student can be used for the player type
