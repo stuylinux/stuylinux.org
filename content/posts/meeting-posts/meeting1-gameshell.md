@@ -29,6 +29,7 @@ To change directories, use the `cd` command followed by the directory you would 
 
 If I am currently in the directory `/home/user/Downloads`, and I want to go to `/home/user/Downloads/folder`, I would run `cd /home/user/Downloads/folder`, or just `cd folder`.
 <br>
+<br>
     - The difference between the two is that the first is the *absolute* path. This is the full path to the directory starting from the root folder (`/`). The second is the *relative* path. This is the path to the directory relative to where you already are. If the directory is located somewhere close to where you are, you can just input the directories leading up to that instead of starting all the way from `/`.
 
 **Important note**:
