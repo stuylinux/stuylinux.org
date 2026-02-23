@@ -5,7 +5,7 @@ date: 2026-02-22
 description: Introducing the shell and terminal with our second meeting of the year!
 ---
 
-While there is some really cool and wacky software that we will explore in this club, it's important to have basic terminal skills.
+While there's some really cool and wacky software that we will explore in this club, it's important to have basic terminal skills.
 <br>
 Hence, our first (technically second) meeting is on terminal basics.
 <br>
@@ -28,6 +28,7 @@ To know what directory (a folder) you are currently located in (aka your current
 To change directories, use the `cd` command followed by the directory you would like to go to (as an argument).
 
 If I am currently in the directory `/home/user/Downloads`, and I want to go to `/home/user/Downloads/folder`, I would run `cd /home/user/Downloads/folder`, or just `cd folder`.
+
     - The difference between the two is that the first is the *absolute* path. This is the full path to the directory starting from the root folder (`/`). The second is the *relative* path. This is the path to the directory relative to where you already are. If the directory is located somewhere close to where you are, you can just input the directories leading up to that instead of starting all the way from `/`.
 
 **Important note**:
@@ -75,16 +76,15 @@ If I have a file `mystery` in my current working directory, I would run `file my
 ## GameShell
 As mentioned earlier, GameShell is the terminal game we'll be playing to teach members terminal basics.
 Here is some history of GameShell from its GitHub page:
-```
-Teaching first-year university students or high schoolers to use a Unix shell is not always the easiest or most entertaining of tasks. GameShell was devised as a tool to help students at the Université Savoie Mont Blanc to engage with a real shell, in a way that encourages learning while also having fun.
 
-The original idea, due to Rodolphe Lepigre, was to run a standard bash session with an appropriate configuration file that defined "missions" which would be "checked" in order to progress through the game.
-```
+> Teaching first-year university students or high schoolers to use a Unix shell is not always the easiest or most entertaining of tasks. GameShell was devised as a tool to help students at the Université Savoie Mont Blanc to engage with a real shell, in a way that encourages learning while also having fun.
+
+> The original idea, due to Rodolphe Lepigre, was to run a standard bash session with an appropriate configuration file that defined "missions" which would be "checked" in order to progress through the game.
 
 ### Getting Started
 If this does not work right away, read the bottom of the [GameShell GitHub page](https://github.com/phyver/GameShell) for more info.
 
-The command to start are these two here:
+The commands to start are these two here:
 <br>
 (**NOTE**: In most cases on the web, lines starting with `$` means enter this command as your user, so you don't include the `$` in your command)
 ```

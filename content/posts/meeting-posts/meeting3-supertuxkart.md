@@ -5,7 +5,7 @@ date: 2026-02-22
 description: Ending off the fall semester by playing a FOSS game! (SuperTuxKart)
 ---
 
-We decided that a great way to end off finals week (as well as the fall semester) would be to introduce everyone to a fun FOSS game through our LAN party (SuperTuxKart)!
+We decided that a great way to end off finals week (as well as the fall semester) would be to introduce everyone to a fun FOSS game (SuperTuxKart) through our LAN party!
 
 ## Introduction
 [SuperTuxKart](https://supertuxkart.net/Main_Page.html) is one of the many FOSS games out there that's available to play! It is largely inspired by the popular Nintendo game, [Super Mario Kart](https://en.wikipedia.org/wiki/Super_Mario_Kart), where many people can play as certain characters and compete with each other in a simulated race environment. However, SuperTuxKart uses mascots popular in the Linux community (such as the [GNU gnu](https://en.wikipedia.org/wiki/GNU#Logo), [KDE Konqi](https://en.wikipedia.org/wiki/KDE#Mascot), and of course, the iconic [Tux penguin](https://en.wikipedia.org/wiki/Tux_(mascot))) in lieu of Mario characters.
@@ -18,7 +18,7 @@ When downloaded from the website, SuperTuxKart comes in a tarball (a type of fil
 $ tar xzvf SuperTuxKart-[current version]-linux-x86_64.tar.gz
 ```
 
-We can now use the following commands to start the game:
+We can now run the following commands to start the game:
 ```
 $ cd SuperTuxKart-[current version]-linux-x86_64/
 $ ./run_game.sh
@@ -47,7 +47,7 @@ In addition, the landing screen will present you with a variety of options to ch
 - **Addons**: This is where addons (custom karts, tracks, and arenas) made *outside* of the game's included defaults can be downloaded and installed for a more customized player experience!
 
 ### Creating A Server
-From the "Online" option, you can easily create your own local server for everyone connected to the same network to join. You can customize the name, maximum number of players, an optional password, difficulty, game mode (normal, time trial, battle, soccer), and number of AI karts (if any, at all). However, you can't increase the maximum number of players to more than eight. This is an issue if you have more than eight players who want to join! So, here is the workaround:
+From the "Online" option, you can easily create your own local server for everyone connected to the same network to join. You can customize the name, maximum number of players, an optional password, difficulty, game mode (normal, time trial, battle, soccer), and number of AI karts (if any, at all). However, you can't increase the maximum number of players to more than eight. This is an issue if you have more than eight players who want to join (which was the case in our meeting)! So, here is the workaround:
 
 You can start a *separate* process of SuperTuxKart that runs in the background with the following options:
 ```
@@ -59,7 +59,7 @@ Note that this does not open the GUI, so if you want to join and play as well, y
 ### Joining A Server & Playing
 From the "Online" option, you can also join either a local server or an online server. For this meeting, we had all members join the centralized local server. They are able to chat with others in a chat session between completed race sessions. In this chat session, players can kick others from the server if they're being disruptive. The person running the server can then start the race at any time. They can also exit or completely end the race at any time.
 
-All players (including the person running the server) have 30 seconds to choose their kart and decide together what racetrack should they play on. There's a plethora of karts and racetracks players can choose from (although some tracks are locked; there's a way to unlock all of these which will be explained later). My personal favorite is Wilbur (the mascot for [GIMP](https://www.gimp.org/)) as it has a high nitro boost and high initial acceleration. The person running the server also has controls over how many laps there should be per race session.
+All players (including the person running the server) have 30 seconds to choose their kart and decide together what racetrack should they play on. There's a plethora of karts and racetracks players can choose from (although some tracks are locked; there's a way to unlock all of these which will be explained later). My personal favorite is Wilbur (the mascot for [GIMP](https://www.gimp.org/)) as it has a high nitro boost and high initial acceleration. The person running the server also has control over how many laps there should be per race session.
 
 After the race is over, a leaderboard is presented on the screen, and the person running the server has the option to start a different race or completely end gameplay altogether.
 
@@ -69,4 +69,4 @@ Usually, features are unlocked by completing story mode. However, there's a chea
 First, go to wherever the configuration folder is for SuperTuxKart using the `cd` command (usually in `~/.config/supertuxkart/config-0.10`). Then, use a text editor to edit the `players.xml` file. Replace all instances of "none" with "hard". Save the file and relaunch SuperTuxKart. You now have all the features you've ever wanted unlocked!
 
 ## Conclusion
-After our gameplay sessions were over, we ended off the meeting by mentioning that members will be encouraged to host their own meetings in the future (after all, me and Axel are graduating this year :'))! These meetings will hopefully be paired with blog posts (like this one and many others) that will be written by them, so stay tuned on this blog for those!
+After our gameplay sessions were over, we ended off the meeting by mentioning that members will be encouraged to host their own meetings in the future [after all, me and Axel are graduating this year :')]! These meetings will hopefully be paired with blog posts (like this one and many others) that will be written by them, so stay tuned on this blog for those!
