@@ -37,3 +37,65 @@ With that said, we'll show how to complete a couple of picoCTF challenges we've 
 ## Completing Challenges
 
 ### Log Hunt
+After downloading the server.log file from picoctf.org, we can start solving it.
+
+First thing that would make sense to do is to open it up and check it out. You can run `less server.log` to scroll through the text in the log.
+
+After looking at it, we can realize it is way too long to look through by hand, so instead we'll have to search for text. This should remind you of our favorite command: `grep`!!
+
+Since we know the key must start with picoCTF, we can run `grep picoCTF server.log` to look for the string picoCTF in the log file. This command gives us this:
+
+```
+[1990-08-09 10:00:10] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 11:04:27] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 11:04:29] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 11:04:37] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 12:19:23] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 12:19:29] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 12:19:32] INFO FLAGPART: picoCTF{us3_
+```
+
+We can see that these all have the word FLAGPART in it. This leads us to believe the other lines with parts of the flag have the same FLAGPART label. 
+
+```
+$ grep FLAGPART server.log
+[1990-08-09 10:00:10] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 10:02:55] INFO FLAGPART: y0urlinux_
+[1990-08-09 10:05:54] INFO FLAGPART: sk1lls_
+[1990-08-09 10:05:55] INFO FLAGPART: sk1lls_
+[1990-08-09 10:10:54] INFO FLAGPART: cedfa5fb}
+[1990-08-09 10:10:58] INFO FLAGPART: cedfa5fb}
+[1990-08-09 10:11:06] INFO FLAGPART: cedfa5fb}
+[1990-08-09 11:04:27] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 11:04:29] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 11:04:37] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 11:09:16] INFO FLAGPART: y0urlinux_
+[1990-08-09 11:09:19] INFO FLAGPART: y0urlinux_
+[1990-08-09 11:12:40] INFO FLAGPART: sk1lls_
+[1990-08-09 11:12:45] INFO FLAGPART: sk1lls_
+[1990-08-09 11:16:58] INFO FLAGPART: cedfa5fb}
+[1990-08-09 11:16:59] INFO FLAGPART: cedfa5fb}
+[1990-08-09 11:17:00] INFO FLAGPART: cedfa5fb}
+[1990-08-09 12:19:23] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 12:19:29] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 12:19:32] INFO FLAGPART: picoCTF{us3_
+[1990-08-09 12:23:43] INFO FLAGPART: y0urlinux_
+[1990-08-09 12:23:45] INFO FLAGPART: y0urlinux_
+[1990-08-09 12:23:53] INFO FLAGPART: y0urlinux_
+[1990-08-09 12:25:32] INFO FLAGPART: sk1lls_
+[1990-08-09 12:28:45] INFO FLAGPART: cedfa5fb}
+[1990-08-09 12:28:49] INFO FLAGPART: cedfa5fb}
+[1990-08-09 12:28:52] INFO FLAGPART: cedfa5fb}
+```
+
+Now we can make out our answer as `picoCTF{us3_y0urlinux_sk1lls_cedfa5fb}`. Some are duplicated and it is repeated, but now we have the answer.
+
+
+### Try it yourself!
+We encourage you to explore these challneges. Start on the easy ones and work your way up!
+
+A nice one to try is Riddle Registry. 
+
+A hint for this one is *metadata*.
+
+If you don't know what that is or a command to look at it, you should google it. The point of these CTF's are for you to learn, so looking things up and forming your plan from there is a great thing to do.
