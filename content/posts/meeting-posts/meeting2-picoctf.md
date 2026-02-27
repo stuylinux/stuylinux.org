@@ -97,5 +97,6 @@ We encourage you to explore these challneges. Start on the easy ones and work yo
 A nice one to try is Riddle Registry. 
 
 A hint for this one is *metadata*.
+A second hint is that many of these problems have the final answers encrypted. So if you see a random string of letters, dont be scared. Two common encryptions for these types of things would be *rot13* or *base64*.
 
 If you don't know what that is or a command to look at it, you should google it. The point of these CTF's are for you to learn, so looking things up and forming your plan from there is a great thing to do.
