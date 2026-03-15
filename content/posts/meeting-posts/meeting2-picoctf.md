@@ -7,7 +7,7 @@ description: Ending off the 2025 year by completing picoCTF challenges!
 
 Even though 2025 wasn't the Year of the Linux Desktop[^1] (while [we had some hope](https://stuylinux.org/posts/2024/)), it was still a great year for Stuy Linux nonetheless, so we decided to end it off with some picoCTF challenges (plus, we didn't really have any other meeting ideas)!
 
-[^1]: The "Year of the Linux Desktop" is a long-running sarcastic joke that's been around since Linux's inception that basically pokes fun at a particular year when Linux as a desktop OS will become mainstream (which realistically has never happened).
+[^1]: [1] The "Year of the Linux Desktop" is a long-running sarcastic joke that's been around since Linux's inception that basically pokes fun at a particular year when Linux as a desktop OS will become mainstream (which realistically has never happened).
 
 ## CTF vs picoCTF
 It's important to note what "CTF" even means in order to understand how picoCTF challenges work. "CTF" stands for "capture the flag", which has two meanings. In the traditional sense, ["capture the flag"](https://en.wikipedia.org/wiki/Capture_the_flag) is a physical outdoor sport played by two or more teams that each have a flag. The goal is to capture the other team's flag from their "base" (which can even be hidden sometimes!) and bring it back to their own base safely. 
@@ -86,7 +86,7 @@ $ grep FLAGPART server.log
 ```
 Removing the duplicated text, we can now make out our answer as `picoCTF{us3_y0urlinux_sk1lls_cedfa5fb}`. As a bonus, we can use `grep`, other command-line tools, and the magic of piping if we want the output to be a bit cleaner (i.e. no duplications).
 
-We don't necessarily care about the timestamp for each line of the output. The only relevant information is the "FLAGPART" label and the string afterwards. A useful regular expression we can use is `FLAGPART.*`, where `.*` means to match *zero or more* occurrences of any character. The `-o` output of `grep` will also come in handy as we *only* want the output of the matched regular expression. Running the command `grep -o "FLAGPART.*" server.log` gives us the following output:
+We don't necessarily care about the timestamp for each line of the output. The only relevant information is the "FLAGPART" label and the string afterwards. A useful regular expression we can use is `FLAGPART.*`, where `.*` means to match *zero or more* occurrences of any character. The `-o` option of `grep` will also come in handy as we *only* want the output of the matched regular expression. Running the command `grep -o "FLAGPART.*" server.log` gives us the following output:
 ```
 FLAGPART: picoCTF{us3_
 FLAGPART: y0urlinux_
@@ -151,4 +151,4 @@ A second hint is that many of these problems have the final answers encrypted. S
 
 If you don't know what any of those are or the commands to use them, you should Google[^2] it. The point of these CTFs are for you to learn, so looking things up and forming your plan from there is a great thing to do.
 
-[^2]: generic term not specific to Google itself
+[^2]: [2] generic term not specific to Google itself
