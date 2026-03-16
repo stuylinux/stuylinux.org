@@ -69,7 +69,7 @@ This means that the file is officially recognized as a shell script!
 ### Shebang
 The shebang is a line in your shell script that indicates which *program* will read and interpret the syntax in the file. In this case, we want the BASH shell to do that as 1) it is the most widely used and installed shell on most Linux distributions and 2) it implements some useful features that we can use in our script[^1]. Make sure to include this line at the top of the file:
 
-[^1]: [1] BASH is a [POSIX](https://en.wikipedia.org/wiki/POSIX)-compliant shell, meaning that it can read and interpret standard shell syntax. However, BASH implements a few useful features called [bashisms](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#POSIX_mode). One of these is double brackets (`[[..]]`). These support glob matching, regular expressions, and other things that standard shell scripting can't. It is important that you are explicit in your shebang about which program to use when reading and interpreting the syntax, as POSIX-strict shells such as `dash` and `mksh` can't interpret bashisms.
+[^1]: [1] BASH is a [POSIX](https://en.wikipedia.org/wiki/POSIX)-compliant shell, meaning that it can read and interpret standard shell syntax. However, BASH implements a few useful features called [bashisms](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#POSIX_mode). One of these is double brackets (`[[...]]`). These support glob matching, regular expressions, and other things that standard shell scripting can't. It is important that you are explicit in your shebang about which program to use when reading and interpreting the syntax, as POSIX-strict shells such as `dash` and `mksh` can't interpret bashisms.
 ```
 #!/usr/bin/env bash
 ```
@@ -393,7 +393,7 @@ Much better! Those who have been in the club for a while will recognize the four
 Hint: the string is encoded using ROT13. Not sure what that is? Look it up and have fun!
 
 ### Bonus!
-Nicolai (a fellow member of our club) managed to write his own decoding program in [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)), which was very cool! Here it is:
+Nicolai (a fellow member of our club) managed to write his own decoding program in [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) last year, which was very cool! Here it is:
 
 ```
 use std::{
